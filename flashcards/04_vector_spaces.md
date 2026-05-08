@@ -20,8 +20,14 @@ A: Any theorem proved from the axioms automatically applies to every example —
 
 ## 4.2 Vector Space Axioms
 
+Q: Before the formal axioms: predict what properties a "vector-space-like" set $V$ must satisfy if it should behave like $\mathbb{R}^n$.
+A: You should be able to add any two elements (closure), scale by any real (closure), and have a zero and inverses; addition should be commutative and associative; scaling should distribute over addition. The ten axioms formalize exactly this.
+
 Q: What is a vector space, informally?
 A: A set $V$ together with an "addition" operation and a "scalar multiplication" operation that behave like addition and scaling of arrows in $\mathbb{R}^n$ — satisfying ten specific axioms about closure, associativity, commutativity, identities, inverses, and distributivity.
+
+Q: To distinguish the closure axioms from the identity/inverse axioms: which one fails for "polynomials of degree exactly $n$"?
+A: Closure under addition fails ($x^n + (-x^n) = 0$ has degree 0, not $n$). The identity/inverse axioms also fail (no zero polynomial in the set), but closure is the cleanest counter-example.
 
 C: A vector space requires closure under two operations: [vector addition] and [scalar multiplication].
 
