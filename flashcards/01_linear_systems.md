@@ -1,6 +1,6 @@
 +++
 order = 1
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "linear-systems", "gaussian-elimination", "rref", "matrices"]
 +++
 
@@ -74,7 +74,7 @@ A: Writing out variables and plus signs repeatedly is bulky and hides the struct
 
 C: A [matrix] is a rectangular array of numbers.
 
-C: A matrix with $m$ rows and $n$ columns is called an [$m \times n$ matrix], and $m \times n$ is called its size.
+C: A matrix with $m$ rows and $n$ columns is called an [$m \times n$ matrix], and this rows-by-columns expression is called its size.
 
 C: The [entry] in row $i$ and column $j$ of a matrix $A$ is denoted $a_{ij}$, where $i$ is the row index and $j$ is the column index.
 

@@ -67,8 +67,8 @@ C: Two vectors $\vec{u}, \vec{v} \in \mathbb{R}^n$ are [orthogonal] if $\vec{u}\
 
 C: The zero vector is orthogonal to [every] vector in $\mathbb{R}^n$, since $\vec{0}\cdot\vec{v} = 0$ for all $\vec{v}$.
 
-Q: Is orthogonality a symmetric relation?
-A: Yes. Since $\vec{u}\cdot\vec{v} = \vec{v}\cdot\vec{u}$, if $\vec{u}\perp\vec{v}$ then $\vec{v}\perp\vec{u}$. The dot product being symmetric makes "perpendicular" a symmetric notion, matching geometric intuition.
+Q: Why is orthogonality a symmetric relation?
+A: Since $\vec{u}\cdot\vec{v} = \vec{v}\cdot\vec{u}$, if $\vec{u}\perp\vec{v}$ then $\vec{v}\perp\vec{u}$. The dot product being symmetric makes "perpendicular" a symmetric notion, matching geometric intuition.
 
 ## 9.6 Pythagorean Theorem
 
@@ -155,8 +155,8 @@ C: The columns of an orthogonal matrix $U$ form an [orthonormal] set (orthonorma
 Q: Why does $U^T U = I$ encode "columns are orthonormal"?
 A: The $(i,j)$ entry of $U^T U$ is $\vec{u}_i\cdot\vec{u}_j$, where $\vec{u}_i$ is the $i$th column of $U$. This equals $1$ on the diagonal (unit length) and $0$ off-diagonal (pairwise orthogonal) exactly when the columns form an orthonormal set. So $U^T U = I$ is shorthand for orthonormal columns.
 
-Q: A common pitfall: does "orthogonal matrix" mean its columns are just orthogonal?
-A: No — the standard term "orthogonal matrix" requires orthonormal columns (orthogonal AND unit length). A matrix with merely orthogonal (non-unit) columns satisfies $U^T U = D$ for a diagonal $D$, not $I$.
+Q: A common pitfall: what does the term "orthogonal matrix" require of the columns, beyond their being pairwise orthogonal?
+A: The standard term "orthogonal matrix" requires orthonormal columns (orthogonal AND unit length). A matrix with merely orthogonal (non-unit) columns satisfies $U^T U = D$ for a diagonal $D$, not $I$.
 
 ## 9.14 Orthogonal Matrices Preserve Length and Angle
 

@@ -109,8 +109,8 @@ A: $R_{kk} = \|\vec{v}_k\|$, the norm of the $k$-th unnormalized Gram-Schmidt ve
 
 ## 10.8 Uniqueness
 
-Q: Is the QR decomposition unique?
-A: Yes, given a sign convention. For any matrix $A$ with linearly independent columns, there is exactly one factorization $A = QR$ in which $Q$ has orthonormal columns and $R$ is upper-triangular with strictly positive diagonal entries. Without the sign convention, each column of $Q$ and the corresponding row of $R$ could be simultaneously negated.
+Q: Under what conditions is the QR decomposition unique?
+A: For any matrix $A$ with linearly independent columns, there is exactly one factorization $A = QR$ in which $Q$ has orthonormal columns and $R$ is upper-triangular with strictly positive diagonal entries. Without the sign convention, each column of $Q$ and the corresponding row of $R$ could be simultaneously negated.
 
 C: The QR decomposition is unique when $R$ is required to have [positive diagonal entries] and $A$ has linearly independent columns.
 
@@ -151,8 +151,8 @@ C: Modified Gram-Schmidt is numerically more [stable] than classical Gram-Schmid
 Q: Why is modified Gram-Schmidt numerically more stable than classical Gram-Schmidt?
 A: In classical Gram-Schmidt, rounding errors from earlier projections get reused when computing later inner products with the original $\vec{a}_k$, letting errors accumulate and producing $\vec{q}_k$ that are not truly orthogonal. In the modified version each subtraction uses the already-corrected intermediate vector, so error does not amplify the way it does in the classical form.
 
-Q: Do classical and modified Gram-Schmidt give the same result in exact arithmetic?
-A: Yes. In exact arithmetic they produce identical $Q$ and $R$. They differ only in finite-precision floating-point arithmetic, where modified Gram-Schmidt preserves orthogonality of the computed $\vec{q}_k$ much better.
+Q: How do the outputs of classical and modified Gram-Schmidt compare in exact arithmetic?
+A: In exact arithmetic they produce identical $Q$ and $R$. They differ only in finite-precision floating-point arithmetic, where modified Gram-Schmidt preserves orthogonality of the computed $\vec{q}_k$ much better.
 
 ## 10.12 Worked Procedure
 

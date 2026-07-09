@@ -1,6 +1,6 @@
 +++
 order = 13
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "svd", "singular-values", "pseudoinverse", "low-rank-approximation", "pca"]
 +++
 
@@ -21,7 +21,8 @@ A: Data matrices usually have rows = observations and columns = features, so $m 
 
 ## 13.2 Singular Values
 
-C: The singular values of an $m \times n$ matrix $A$ are defined as $\sigma_i = \sqrt{\lambda_i(A^T A)}$, where [$\lambda_i(A^T A)$] denotes the $i$-th eigenvalue of $A^T A$.
+Q: How are the singular values $\sigma_i$ of an $m \times n$ matrix $A$ defined?
+A: $\sigma_i = \sqrt{\lambda_i(A^T A)}$, the square root of the $i$-th eigenvalue of $A^T A$.
 
 C: Singular values are always [nonnegative], because they are square roots of eigenvalues of the positive semi-definite matrix $A^T A$.
 

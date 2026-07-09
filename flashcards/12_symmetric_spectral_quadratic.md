@@ -15,8 +15,8 @@ C: A real matrix $A$ is [symmetric] when $A^T = A$, i.e. $a_{ij} = a_{ji}$ for a
 
 C: For a symmetric matrix $A$, the entry in row $i$, column $j$ equals the entry in row $[j]$, column $[i]$.
 
-Q: Is every diagonal matrix symmetric?
-A: Yes. If $D$ has $d_{ij} = 0$ whenever $i \neq j$, then $d_{ij} = d_{ji} = 0$ off the diagonal, so $D^T = D$. Diagonal matrices are the simplest symmetric matrices.
+Q: Why is every diagonal matrix symmetric?
+A: If $D$ has $d_{ij} = 0$ whenever $i \neq j$, then $d_{ij} = d_{ji} = 0$ off the diagonal, so $D^T = D$. Diagonal matrices are the simplest symmetric matrices.
 
 Q: Give three natural examples where symmetric matrices arise.
 A: (1) Covariance matrices $\Sigma$ in statistics, since $\operatorname{Cov}(X_i, X_j) = \operatorname{Cov}(X_j, X_i)$. (2) Gram matrices $B^T B$ of inner products of columns of $B$. (3) Hessian matrices of second partial derivatives $\partial^2 f/\partial x_i \partial x_j$ of smooth functions, equal by Clairaut's theorem.
@@ -40,10 +40,11 @@ C: A matrix $A$ is orthogonally diagonalizable iff there is an orthogonal matrix
 Q: Why are eigenvalues of a real symmetric matrix always real, even though a general real matrix can have complex eigenvalues?
 A: If $A\vec{v} = \lambda\vec{v}$ with $\vec{v} \neq 0$, taking conjugate transpose gives $\overline{\vec{v}}^T A = \overline{\lambda}\,\overline{\vec{v}}^T$ (using $A^T = A$ and $A$ real). Multiplying by $\vec{v}$ on the right gives $\overline{\lambda}\,\overline{\vec{v}}^T\vec{v} = \overline{\vec{v}}^T A \vec{v} = \lambda\, \overline{\vec{v}}^T\vec{v}$. Since $\overline{\vec{v}}^T\vec{v} > 0$, we get $\lambda = \overline{\lambda}$, so $\lambda$ is real.
 
-C: Every eigenvalue of a real symmetric matrix is a [real] number.
+Q: What is special about the eigenvalues of a real symmetric matrix?
+A: They are all real numbers (no complex pairs).
 
-Q: Does a general (non-symmetric) real matrix always have real eigenvalues?
-A: No. For example, the rotation matrix $\begin{pmatrix}0 & -1 \\ 1 & 0\end{pmatrix}$ has eigenvalues $\pm i$. Only special structure (like symmetry) guarantees real eigenvalues.
+Q: Give an example showing that a general (non-symmetric) real matrix need not have real eigenvalues.
+A: The rotation matrix $\begin{pmatrix}0 & -1 \\ 1 & 0\end{pmatrix}$ has eigenvalues $\pm i$. Only special structure (like symmetry) guarantees real eigenvalues.
 
 ## 12.4 Orthogonal Eigenvectors
 
@@ -52,8 +53,8 @@ A: Let $A\vec{v}_1 = \lambda_1 \vec{v}_1$ and $A\vec{v}_2 = \lambda_2\vec{v}_2$ 
 
 C: For a symmetric $A$ with $A\vec{v}_1 = \lambda_1 \vec{v}_1$ and $A\vec{v}_2 = \lambda_2 \vec{v}_2$, if $\lambda_1 \neq \lambda_2$ then $\vec{v}_1 \cdot \vec{v}_2 = [0]$.
 
-Q: What if a symmetric matrix has a repeated eigenvalue — are its eigenvectors still orthogonal?
-A: Not automatically, but they can always be chosen to be. Within the eigenspace of a repeated eigenvalue, any basis works; applying Gram-Schmidt to that basis produces an orthonormal basis of eigenvectors. Combined with orthogonality across distinct eigenvalues, this gives an orthonormal eigenbasis for all of $\mathbb{R}^n$.
+Q: When a symmetric matrix has a repeated eigenvalue, how do we still obtain an orthonormal basis of eigenvectors?
+A: Within the eigenspace of a repeated eigenvalue, any basis works; applying Gram-Schmidt to that basis produces an orthonormal basis of eigenvectors. Combined with orthogonality across distinct eigenvalues, this gives an orthonormal eigenbasis for all of $\mathbb{R}^n$.
 
 ## 12.5 The Spectral Theorem
 

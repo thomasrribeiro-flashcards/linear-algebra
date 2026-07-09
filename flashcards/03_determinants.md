@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "determinants", "cofactor-expansion", "cramer", "adjugate"]
 +++
 
@@ -16,7 +16,7 @@ C: For a $2\times 2$ matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, 
 Q: Geometrically, what does $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ represent?
 A: It is the signed area of the parallelogram spanned by the column vectors $\begin{pmatrix}a\\c\end{pmatrix}$ and $\begin{pmatrix}b\\d\end{pmatrix}$ in $\mathbb{R}^2$. A positive sign means the columns form a right-handed (counterclockwise) pair; a negative sign means the orientation is reversed.
 
-C: If $\det(A) = 0$ for a $2\times 2$ matrix $A$, then the two column vectors of $A$ are [parallel] (linearly dependent), so the parallelogram they span collapses to a line segment with zero area.
+C: If $\det(A) = 0$ for a $2\times 2$ matrix $A$, then the two column vectors of $A$ are [parallel (linearly dependent)], so the parallelogram they span collapses to a line segment with zero area.
 
 Q: Compute $\det\begin{pmatrix} 3 & 1 \\ 2 & 4 \end{pmatrix}$.
 A: $\det = (3)(4) - (1)(2) = 12 - 2 = 10$. Here $a=3$, $b=1$, $c=2$, $d=4$, so $ad-bc = 10$.

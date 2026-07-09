@@ -72,7 +72,7 @@ A: Row-reducing is faster for a single $\vec{x}$ because inverting a matrix cost
 
 ## 6.6 Change of Basis Between Two Bases
 
-C: If $\mathcal{B}$ and $\mathcal{C}$ are both bases of $\mathbb{R}^n$, the [change-of-coordinates matrix from $\mathcal{B}$ to $\mathcal{C}$] is $P_{\mathcal{C}\leftarrow\mathcal{B}} = P_\mathcal{C}^{-1}P_\mathcal{B}$, where $P_\mathcal{B}$ and $P_\mathcal{C}$ have the respective basis vectors as columns.
+C: If $\mathcal{B}$ and $\mathcal{C}$ are both bases of $\mathbb{R}^n$, the [change-of-coordinates matrix] from $\mathcal{B}$ to $\mathcal{C}$ is $P_{\mathcal{C}\leftarrow\mathcal{B}} = P_\mathcal{C}^{-1}P_\mathcal{B}$, where $P_\mathcal{B}$ and $P_\mathcal{C}$ have the respective basis vectors as columns.
 
 C: The change-of-basis relation is $[\vec{x}]_\mathcal{C} = [P_{\mathcal{C}\leftarrow\mathcal{B}}[\vec{x}]_\mathcal{B}]$.
 

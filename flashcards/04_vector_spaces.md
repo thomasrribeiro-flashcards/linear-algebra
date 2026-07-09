@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "vector-spaces", "subspaces", "null-space", "column-space", "span"]
 +++
 
@@ -55,7 +55,7 @@ A: Suppose $\vec{0}_1$ and $\vec{0}_2$ are both zero vectors. Then $\vec{0}_1 = 
 
 C: The space $\mathbb{R}^n$ consists of all [$n$-tuples of real numbers] with componentwise addition and scalar multiplication.
 
-C: The vector space $\mathbb{P}_n$ is the set of all polynomials of degree at most [$n$] with real coefficients.
+C: The vector space $\mathbb{P}_n$ is the set of all polynomials of degree [at most $n$] with real coefficients.
 
 Q: Why is $\mathbb{P}_n$ (polynomials of degree $\le n$) a vector space?
 A: Adding two polynomials of degree $\le n$ gives a polynomial of degree $\le n$, and scaling one by a real number does the same — so it is closed under both operations. The zero polynomial acts as $\vec{0}$, and every axiom follows from ordinary polynomial arithmetic.
