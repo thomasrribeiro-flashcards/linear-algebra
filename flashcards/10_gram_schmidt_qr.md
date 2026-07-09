@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "gram-schmidt", "qr-decomposition", "orthonormal-basis"]
 +++
 

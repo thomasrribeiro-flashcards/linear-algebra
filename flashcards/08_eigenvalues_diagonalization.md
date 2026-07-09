@@ -1,6 +1,6 @@
 +++
 order = 8
-subject = "Math"
+subject = "Mathematics"
 tags = ["math", "linear-algebra", "eigenvalues", "eigenvectors", "diagonalization", "characteristic-polynomial"]
 +++
 
