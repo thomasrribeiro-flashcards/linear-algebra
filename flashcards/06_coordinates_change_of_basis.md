@@ -19,7 +19,7 @@ A: The coordinate vector should be $(3, -2)$ — the tuple of scalars that rebui
 
 ## 6.2 Coordinate Vector Definition
 
-C: Given an ordered basis $\mathcal{B} = \{\vec{b}_1, \ldots, \vec{b}_n\}$ of $V$, the [coordinate vector] of $\vec{x}$ relative to $\mathcal{B}$, written $[\vec{x}]_\mathcal{B}$, is the tuple $(c_1, \ldots, c_n)$ of scalars such that $\vec{x} = c_1\vec{b}_1 + \cdots + c_n\vec{b}_n$.
+C: Given an ordered basis $\mathcal{B} = \{\vec{b}_1, \ldots, \vec{b}_n\}$ of $V$, the [coordinate vector] of $\vec{x}$ relative to $\mathcal{B}$, written $\lbrack \vec{x}\rbrack _\mathcal{B}$, is the tuple $(c_1, \ldots, c_n)$ of scalars such that $\vec{x} = c_1\vec{b}_1 + \cdots + c_n\vec{b}_n$.
 
 Q: Why is the coordinate vector $[\vec{x}]_\mathcal{B}$ uniquely determined?
 A: Because $\mathcal{B}$ is a basis, it is linearly independent, so the only way to write $\vec{x}$ as a linear combination of the $\vec{b}_i$'s is with one specific set of scalars. If two expansions existed, subtracting them would give a nontrivial dependence among the $\vec{b}_i$, contradicting independence.
@@ -33,7 +33,7 @@ C: The coordinate vector $[\vec{x}]_\mathcal{B}$ lives in $[\mathbb{R}^n]$, wher
 
 ## 6.3 The Change-of-Coordinates Map
 
-C: The map $\vec{x} \mapsto [\vec{x}]_\mathcal{B}$ from $V$ to $\mathbb{R}^n$ is called the [change-of-coordinates map].
+C: The map $\vec{x} \mapsto \lbrack \vec{x}\rbrack _\mathcal{B}$ from $V$ to $\mathbb{R}^n$ is called the [change-of-coordinates map].
 
 Q: Why is the change-of-coordinates map linear?
 A: If $\vec{x} = \sum c_i\vec{b}_i$ and $\vec{y} = \sum d_i\vec{b}_i$, then $\vec{x} + \vec{y} = \sum(c_i + d_i)\vec{b}_i$ and $\alpha\vec{x} = \sum(\alpha c_i)\vec{b}_i$. So coordinates of sums are sums of coordinates, and coordinates of scalar multiples are scalar multiples of coordinates.
@@ -41,7 +41,7 @@ A: If $\vec{x} = \sum c_i\vec{b}_i$ and $\vec{y} = \sum d_i\vec{b}_i$, then $\ve
 Q: Why is the change-of-coordinates map invertible?
 A: Every tuple $(c_1, \ldots, c_n) \in \mathbb{R}^n$ corresponds to exactly one vector $\sum c_i\vec{b}_i \in V$, so the map is a bijection. This bijection plus linearity means it is an isomorphism.
 
-C: The change-of-coordinates map $\vec{x} \mapsto [\vec{x}]_\mathcal{B}$ is both [linear] and [invertible].
+C: The change-of-coordinates map $\vec{x} \mapsto \lbrack \vec{x}\rbrack _\mathcal{B}$ is both [linear] and [invertible].
 
 ## 6.4 The Change-of-Basis Matrix
 

@@ -65,7 +65,7 @@ A: No. Adding $x^n$ and $-x^n + 1$ (both of "exact" degree $n$) gives $1$, which
 
 C: The space $M_{m\times n}$ consists of all [$m\times n$ matrices] with real entries, under matrix addition and scalar multiplication.
 
-C: The space $C[a,b]$ consists of all [continuous real-valued functions] defined on the interval $[a,b]$, with pointwise addition and scalar multiplication.
+C: The space $C\lbrack a,b\rbrack $ consists of all [continuous real-valued functions] defined on the interval $\lbrack a,b\rbrack $, with pointwise addition and scalar multiplication.
 
 Q: Why is $C[a,b]$ (continuous functions on $[a,b]$) a vector space?
 A: The sum of two continuous functions is continuous, and a scalar multiple of a continuous function is continuous, so the set is closed under both operations. The zero function plays the role of $\vec{0}$, and the usual algebraic laws of real numbers force every remaining axiom to hold.

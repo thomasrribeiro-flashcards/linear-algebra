@@ -166,7 +166,7 @@ A: By rank-nullity, $\dim\operatorname{range}(T)\le\dim V<\dim W$. So the range 
 Q: Why can every linear transformation between finite-dimensional vector spaces be represented by a matrix, once bases are chosen?
 A: Choosing bases for $V$ and $W$ gives coordinate isomorphisms with $\mathbb{R}^n$ and $\mathbb{R}^m$. Under these coordinates, $T$ becomes a linear map $\mathbb{R}^n\to\mathbb{R}^m$, which must be a matrix transformation. The matrix entries record how $T$ sends each domain basis vector, expressed in coordinates over the codomain basis.
 
-C: Given a basis $\mathcal{B}=\{\vec{v}_1,\dots,\vec{v}_n\}$ of $V$ and a basis $\mathcal{C}$ of $W$, the [matrix of $T$ with respect to $\mathcal{B}$ and $\mathcal{C}$], denoted $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$, has $i$-th column equal to $[T(\vec{v}_i)]_{\mathcal{C}}$, the $\mathcal{C}$-coordinates of $T(\vec{v}_i)$.
+C: Given a basis $\mathcal{B}=\{\vec{v}_1,\dots,\vec{v}_n\}$ of $V$ and a basis $\mathcal{C}$ of $W$, the [matrix of $T$ with respect to $\mathcal{B}$ and $\mathcal{C}$], denoted $\lbrack T\rbrack _{\mathcal{C}\leftarrow\mathcal{B}}$, has $i$-th column equal to $\lbrack T(\vec{v}_i)\rbrack _{\mathcal{C}}$, the $\mathcal{C}$-coordinates of $T(\vec{v}_i)$.
 
 C: Under the matrix representation, coordinates transform by $[T(\vec{v})]_{\mathcal{C}} = [\,[T]_{\mathcal{C}\leftarrow\mathcal{B}}\cdot[\vec{v}]_{\mathcal{B}}\,]$, where $[\vec{v}]_{\mathcal{B}}$ is the coordinate vector of $\vec{v}$ in basis $\mathcal{B}$.
 

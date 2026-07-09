@@ -119,7 +119,7 @@ C: The condition number of $A^TA$ is the [square] of the condition number of $A$
 Q: How do you set up least squares to fit the line $y = \beta_0 + \beta_1 x$ to data points $(x_1, y_1), \ldots, (x_m, y_m)$?
 A: Stack the equations $\beta_0 + \beta_1 x_i = y_i$ into matrix form. The design matrix has rows $[1, x_i]$, the unknown vector is $\vec{\beta} = (\beta_0, \beta_1)^T$, and the target is $\vec{y} = (y_1, \ldots, y_m)^T$. Then solve $A^TA\hat{\vec{\beta}} = A^T\vec{y}$.
 
-C: For linear regression $y = \beta_0 + \beta_1 x$ on $m$ data points, the [design matrix] $A$ has rows $[1, x_i]$, where $x_i$ is the $i$-th input and each $1$ corresponds to the intercept column.
+C: For linear regression $y = \beta_0 + \beta_1 x$ on $m$ data points, the [design matrix] $A$ has rows $\lbrack 1, x_i\rbrack $, where $x_i$ is the $i$-th input and each $1$ corresponds to the intercept column.
 
 Q: In simple linear regression, what is the geometric meaning of minimizing $\sum_i (y_i - \beta_0 - \beta_1 x_i)^2$?
 A: Each term is the squared vertical distance from data point $(x_i, y_i)$ to the line. Summing gives the total squared vertical error. Least squares finds the line minimizing this total, geometrically the line closest to the data in the vertical sense.

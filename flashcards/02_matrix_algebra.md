@@ -146,9 +146,9 @@ C: For a square matrix $A$, invertibility is equivalent to $A$ being [row-equiva
 Q: Why does running Gauss-Jordan on the augmented matrix $[A\mid I]$ yield $[I\mid A^{-1}]$ when $A$ is invertible?
 A: Each row operation corresponds to left-multiplication by an elementary matrix $E_k$, and the full sequence gives $E_r\cdots E_1 A = I$, so $E_r\cdots E_1 = A^{-1}$. Applying the same sequence to the right block transforms $I$ into $E_r\cdots E_1\cdot I = A^{-1}$. Gauss-Jordan simultaneously builds $A^{-1}$ by accumulating the row operations that reduce $A$ to $I$.
 
-C: To compute $A^{-1}$, row-reduce the augmented matrix $[A\mid I]$ to reduced row echelon form; the result is [$[I\mid A^{-1}]$] when $A$ is invertible.
+C: To compute $A^{-1}$, row-reduce the augmented matrix $\lbrack A\mid I\rbrack $ to reduced row echelon form; the result is [$\lbrack I\mid A^{-1}\rbrack $] when $A$ is invertible.
 
-C: If Gauss-Jordan on $[A\mid I]$ fails to produce $I$ on the left (i.e., the left block has a zero row in RREF), then $A$ is [singular] (not invertible).
+C: If Gauss-Jordan on $\lbrack A\mid I\rbrack $ fails to produce $I$ on the left (i.e., the left block has a zero row in RREF), then $A$ is [singular] (not invertible).
 
 P: Compute $A^{-1}$ by Gauss-Jordan for $A=\begin{pmatrix}1 & 2\\ 3 & 4\end{pmatrix}$.
 
