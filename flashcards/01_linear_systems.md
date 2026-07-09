@@ -1,7 +1,6 @@
 +++
-name = "Linear Algebra"
-subject = "Math"
 order = 1
+subject = "Math"
 tags = ["math", "linear-algebra", "linear-systems", "gaussian-elimination", "rref", "matrices"]
 +++
 

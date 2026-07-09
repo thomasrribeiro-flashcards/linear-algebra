@@ -1,5 +1,6 @@
 +++
 order = 12
+subject = "Math"
 tags = ["math", "linear-algebra", "symmetric-matrices", "spectral-theorem", "quadratic-forms", "definiteness"]
 +++
 

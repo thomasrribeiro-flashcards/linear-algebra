@@ -1,5 +1,6 @@
 +++
 order = 11
+subject = "Math"
 tags = ["math", "linear-algebra", "least-squares", "normal-equations", "regression", "projection"]
 +++
 
