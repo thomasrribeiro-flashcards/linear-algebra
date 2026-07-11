@@ -1,6 +1,6 @@
 +++
 order = 6
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "coordinates", "change-of-basis", "isomorphism"]
 +++
 

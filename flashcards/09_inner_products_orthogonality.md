@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "inner-product", "orthogonality", "projection", "orthogonal-basis", "orthogonal-complement"]
 +++
 

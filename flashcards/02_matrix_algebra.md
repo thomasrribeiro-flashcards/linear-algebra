@@ -1,6 +1,6 @@
 +++
 order = 2
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "matrix-algebra", "matrix-multiplication", "inverse", "transpose", "elementary-matrices"]
 +++
 

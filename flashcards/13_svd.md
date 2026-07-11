@@ -1,6 +1,6 @@
 +++
 order = 13
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "svd", "singular-values", "pseudoinverse", "low-rank-approximation", "pca"]
 +++
 

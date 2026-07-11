@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "determinants", "cofactor-expansion", "cramer", "adjugate"]
 +++
 

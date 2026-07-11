@@ -1,6 +1,6 @@
 +++
 order = 5
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "linear-independence", "basis", "dimension", "rank", "rank-nullity"]
 +++
 

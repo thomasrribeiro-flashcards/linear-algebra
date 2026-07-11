@@ -1,6 +1,6 @@
 +++
 order = 4
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "vector-spaces", "subspaces", "null-space", "column-space", "span"]
 +++
 

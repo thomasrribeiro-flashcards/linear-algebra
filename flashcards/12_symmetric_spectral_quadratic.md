@@ -1,6 +1,6 @@
 +++
 order = 12
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "symmetric-matrices", "spectral-theorem", "quadratic-forms", "definiteness"]
 +++
 

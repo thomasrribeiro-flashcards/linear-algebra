@@ -1,6 +1,6 @@
 +++
 order = 7
-subject = "Mathematics"
+subject = "mathematics"
 tags = ["math", "linear-algebra", "linear-transformations", "kernel", "range", "standard-matrix", "similarity"]
 +++
 
