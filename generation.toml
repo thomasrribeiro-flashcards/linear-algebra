@@ -18,3 +18,22 @@ catalog_hash = "sha256:9fa323b871b88331a0020e5a7cbf18230cfe14287aa25dac405f40238
 context_hash = "sha256:66250170bb2822700ef4be184554751fde48b9b42e37fcb9d80083c134c6e9db"
 base_commit = "a7e16117b06ce792b6dc98f77d588df6c85e4bc1"
 provenance_source = "website-generation-request"
+
+[[runs]]
+artifacts = [".flashcards/audits/02_vectors_linear_combinations_and_span-cold-start.md", "CARD_README.md", "README.md", "figures/02_vectors_linear_combinations_and_span/head_to_tail_addition.svg", "figures/02_vectors_linear_combinations_and_span/head_to_tail_addition.tex", "figures/02_vectors_linear_combinations_and_span/signed_scaling.svg", "figures/02_vectors_linear_combinations_and_span/signed_scaling.tex", "flashcards/02_vectors_linear_combinations_and_span.md"]
+run_id = "request-27"
+request_id = "27"
+operation = "chapter-content"
+provider_id = "openai"
+model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+generated_at = "2026-08-31T19:41:34.497Z"
+generation_mode = "generate"
+chapter_id = "02_vectors_linear_combinations_and_span"
+workflow_version = "chapter-content-v1"
+workflow_commit = "32484c5c908fff93b8dbcc448d23b39d61fa14eb"
+registry_base_commit = "36ff52667b191499a49a5dfc94c3c59fdaed60a0"
+catalog_hash = "sha256:fd8c0b120737e816e66aac905c62fedb3831c1a811a8b2c0e2a05e383dd11832"
+context_hash = "sha256:1d5fb0f72bd29bd5355334e9fcd265ed7ded0871c29c6dd6b11f83ecd75caa42"
+base_commit = "eb8e335cab25e86a06e854ee44f1ab91442e74ce"
+provenance_source = "website-generation-request"

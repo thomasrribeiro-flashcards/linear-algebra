@@ -1,0 +1,24 @@
+\documentclass[tikz,border=5pt]{standalone}
+% flashcards-title: Signed scalar multiple of a coordinate vector
+% flashcards-desc: Coordinate axes show vector u from O to A at coordinates one and one-half, and dashed vector w from O to B at coordinates negative two and negative one.
+\input{figures/tikz-style.tex}
+
+\begin{document}
+\begin{tikzpicture}[x=1.15cm,y=1.15cm]
+  \draw[fc axis] (-2.75,0) -- (2.75,0) node[fc label,below left] {first coordinate};
+  \draw[fc axis] (0,-1.75) -- (0,1.75) node[fc label,below right] {second coordinate};
+
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (1.35,0.7);
+  \coordinate (B) at (-2.15,-1.12);
+
+  \draw[fc guide] (A) -- (1.35,0) (A) -- (0,0.7);
+  \draw[fc guide] (B) -- (-2.15,0) (B) -- (0,-1.12);
+  \draw[fc primary] (O) -- node[fc label,above left] {$\mathbf u$} (A);
+  \draw[fc secondary] (O) -- node[fc label,below right] {$\mathbf w$} (B);
+
+  \node[fc point,label={[fc label]above left:$O$}] at (O) {};
+  \node[fc point,label={[fc label]above right:$A=(1,\tfrac12)$}] at (A) {};
+  \node[fc point,label={[fc label]below left:$B=(-2,-1)$}] at (B) {};
+\end{tikzpicture}
+\end{document}
