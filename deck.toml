@@ -1,0 +1,27 @@
+schema_version = 2
+subject = "mathematics"
+deck = "linear-algebra"
+level = "undergraduate-core"
+curriculum_order = 8
+status = "chapter-planned"
+pilot_chapter = 1
+created = "2026-08-31"
+
+[prerequisites]
+decks = ["mathematics/elementary-algebra-and-functions"]
+recommended_decks = ["mathematics/mathematical-reasoning-and-proof", "mathematics/single-variable-differential-calculus"]
+assumed_tools = []
+
+[standards]
+flashcards_root = "/Users/thomasribeiro/.flashcards/runner/flashcards-runtime"
+universal = "templates/guides/CARD_STANDARD.md"
+playbook = "templates/guides/AUTHORING_PLAYBOOK.md"
+subject = "templates/guides/mathematics.md"
+# If this reusable guide does not exist, the CLI loads ../DOMAIN_GUIDE.md.
+
+[identity]
+policy = "preserve-id-for-same-retrieval-target"
+
+[sources]
+require_authority = true
+require_license_record = true
