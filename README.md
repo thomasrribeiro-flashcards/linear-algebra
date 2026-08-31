@@ -13,8 +13,9 @@ algebraic, geometric, and computational views.
   variables, algebraic expressions, equations as equality statements,
   substitution and evaluation, verbal-expression translation, equivalent
   expressions, operation properties, distribution, like terms, and expression
-  simplification. Planned but unscheduled prerequisite chapters are not treated
-  as mastered.
+  simplification, equation solutions, equality properties, one-step equations,
+  and equation checking. Planned but unscheduled prerequisite chapters are not
+  treated as mastered.
 - Confirmed tools: none. All required reasoning and representative small
   computations remain possible by hand; optional software-based exploration
   belongs in external practice.
@@ -36,8 +37,10 @@ algebraic, geometric, and computational views.
   iterative solvers, Jordan canonical form, and proof techniques not developed
   locally. Those belong to the named downstream decks or to a later course.
 
-This is a curriculum scaffold only. Every chapter contains metadata and a title
-but no scheduled cards, worked solutions, lesson prose, or figures.
+Chapter 1 now contains the 27-card cold-start pilot for systems and elimination.
+Later chapters remain curriculum-only and have not been authored. The pilot has
+no figures; its representation decisions and intentional omissions are recorded
+in `CARD_README.md` and `.flashcards/audits/pilot-cold-start.md`.
 
 ## Chapter map
 
@@ -93,6 +96,7 @@ authoring.
 | [MIT OpenCourseWare, 18.06SC Linear Algebra syllabus](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/syllabus/) | Undergraduate independent-study course; cross-check for the systems/fundamental-spaces, least-squares/determinants/eigenvalues, and positive-definite/SVD progression, and for the explicit observation that calculus is not required to learn the subject. | CC BY-NC-SA 4.0 unless otherwise noted; used for curricular comparison only. | 2026-08-30 |
 | [Rob Beezer, *A First Course in Linear Algebra*, online contents](https://linear.ups.edu/linear.ups.edu/html/section-RREF.html) | Open first-course text designed for ordinary-algebra entry; cross-check for a developmental path from systems and vectors through vector spaces, transformations, change of basis, determinants, and eigenstructure. | GNU Free Documentation License; consulted without reproducing text or exercises. | 2026-08-30 |
 | [Jim Hefferon, *Linear Algebra*](https://hefferon.net/linearalgebra/) and [license page](https://hefferon.net/source.html) | Open undergraduate text; cross-check for a motivated computational-to-abstract progression and extensive problem practice suitable for independent study. | Choice of GNU FDL or CC BY-SA 3.0 US; consulted without reproducing text or exercises. | 2026-08-30 |
+| [OpenStax, *Precalculus 2e*, §9.6 “Solving Systems with Gaussian Elimination”](https://openstax.org/books/precalculus-2e/pages/9-6-solving-systems-with-gaussian-elimination) | Rice University nonprofit open-textbook program; claim-verification cross-check for augmented matrices, the three reversible row-operation types, echelon form, and the Gaussian-elimination workflow. | CC BY 4.0; consulted for verification only, with original card prose and examples. | 2026-08-30 |
 
 ### Uncertainty and conditions of use
 
