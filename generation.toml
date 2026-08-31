@@ -1,0 +1,20 @@
+schema_version = 1
+
+[[runs]]
+artifacts = [".flashcards/audits/pilot-cold-start.md", "CARD_README.md", "README.md", "flashcards/01_linear_systems_and_elimination.md"]
+run_id = "request-26"
+request_id = "26"
+operation = "chapter-content"
+provider_id = "openai"
+model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+generated_at = "2026-08-31T01:08:56.783Z"
+generation_mode = "generate"
+chapter_id = "01_linear_systems_and_elimination"
+workflow_version = "chapter-content-v1"
+workflow_commit = "fc6451db2967e2fea268329e8973ec13f96ddfbc"
+registry_base_commit = "175d9fd2c62889748000fd36c8c47d0a11fa903f"
+catalog_hash = "sha256:9fa323b871b88331a0020e5a7cbf18230cfe14287aa25dac405f402380df5930"
+context_hash = "sha256:66250170bb2822700ef4be184554751fde48b9b42e37fcb9d80083c134c6e9db"
+base_commit = "a7e16117b06ce792b6dc98f77d588df6c85e4bc1"
+provenance_source = "website-generation-request"
