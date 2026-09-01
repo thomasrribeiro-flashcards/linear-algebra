@@ -37,3 +37,22 @@ catalog_hash = "sha256:fd8c0b120737e816e66aac905c62fedb3831c1a811a8b2c0e2a05e383
 context_hash = "sha256:1d5fb0f72bd29bd5355334e9fcd265ed7ded0871c29c6dd6b11f83ecd75caa42"
 base_commit = "eb8e335cab25e86a06e854ee44f1ab91442e74ce"
 provenance_source = "website-generation-request"
+
+[[runs]]
+artifacts = [".flashcards/audits/03_matrices_and_coordinate_transformations-cold-start.md", "CARD_README.md", "README.md", "figures/03_matrices_and_coordinate_transformations/composition_pipeline.svg", "figures/03_matrices_and_coordinate_transformations/composition_pipeline.tex", "figures/03_matrices_and_coordinate_transformations/special_input_outputs.svg", "figures/03_matrices_and_coordinate_transformations/special_input_outputs.tex", "flashcards/03_matrices_and_coordinate_transformations.md"]
+run_id = "request-28"
+request_id = "28"
+operation = "chapter-content"
+provider_id = "openai"
+model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+generated_at = "2026-09-01T17:55:20.871Z"
+generation_mode = "generate"
+chapter_id = "03_matrices_and_coordinate_transformations"
+workflow_version = "chapter-content-v1"
+workflow_commit = "bb855b303160b7ad8ffce87ac0c815a8e4869cda"
+registry_base_commit = "56eea7254e23603bac4ba7d7a786716e3674e818"
+catalog_hash = "sha256:3c40a544e9bb830b67d7998607f5b149d9722126a5c680729988285aebe1c9a3"
+context_hash = "sha256:acd9f106387d2900b31f7d46178e903e2af4b0a9dc7f05b43c2e59843dfcbb59"
+base_commit = "2e423c4b123cf7141d0ed415402feb86fe7f50c6"
+provenance_source = "website-generation-request"
