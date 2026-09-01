@@ -1,0 +1,20 @@
+\documentclass[tikz,border=5pt]{standalone}
+% flashcards-title: Head-to-tail vector addition
+% flashcards-desc: Vector u runs from O to A, a dashed translated copy of vector v runs from A to B, and a third arrow runs from O to B.
+\input{figures/tikz-style.tex}
+
+\begin{document}
+\begin{tikzpicture}[x=1.25cm,y=1.25cm]
+  \coordinate (O) at (-1.6,-1.1);
+  \coordinate (A) at (0.8,-0.2);
+  \coordinate (B) at (-0.1,1.45);
+
+  \draw[fc candidate] (O) -- (B);
+  \draw[fc primary] (O) -- node[fc label,below right] {$\mathbf u$} (A);
+  \draw[fc secondary] (A) -- node[fc label,right] {copy of $\mathbf v$} (B);
+
+  \node[fc point,label={[fc label]below left:$O$}] at (O) {};
+  \node[fc point,label={[fc label]below right:$A$}] at (A) {};
+  \node[fc point,label={[fc label]above:$B$}] at (B) {};
+\end{tikzpicture}
+\end{document}

@@ -37,10 +37,12 @@ algebraic, geometric, and computational views.
   iterative solvers, Jordan canonical form, and proof techniques not developed
   locally. Those belong to the named downstream decks or to a later course.
 
-Chapter 1 now contains the 27-card cold-start pilot for systems and elimination.
-Later chapters remain curriculum-only and have not been authored. The pilot has
-no figures; its representation decisions and intentional omissions are recorded
-in `CARD_README.md` and `.flashcards/audits/pilot-cold-start.md`.
+Chapter 1 contains the 27-card cold-start pilot for systems and elimination.
+Chapter 2 contains 23 cards on coordinate vectors, vector operations, linear
+combinations, vector equations, span, and homogeneous systems, with two
+retrieval figures. Chapters 3–11 remain curriculum-only and have not been
+authored. Representation decisions and intentional omissions are recorded in
+`CARD_README.md` and the chapter cold-start audits.
 
 ## Chapter map
 
@@ -97,6 +99,8 @@ authoring.
 | [Rob Beezer, *A First Course in Linear Algebra*, online contents](https://linear.ups.edu/linear.ups.edu/html/section-RREF.html) | Open first-course text designed for ordinary-algebra entry; cross-check for a developmental path from systems and vectors through vector spaces, transformations, change of basis, determinants, and eigenstructure. | GNU Free Documentation License; consulted without reproducing text or exercises. | 2026-08-30 |
 | [Jim Hefferon, *Linear Algebra*](https://hefferon.net/linearalgebra/) and [license page](https://hefferon.net/source.html) | Open undergraduate text; cross-check for a motivated computational-to-abstract progression and extensive problem practice suitable for independent study. | Choice of GNU FDL or CC BY-SA 3.0 US; consulted without reproducing text or exercises. | 2026-08-30 |
 | [OpenStax, *Precalculus 2e*, §9.6 “Solving Systems with Gaussian Elimination”](https://openstax.org/books/precalculus-2e/pages/9-6-solving-systems-with-gaussian-elimination) | Rice University nonprofit open-textbook program; claim-verification cross-check for augmented matrices, the three reversible row-operation types, echelon form, and the Gaussian-elimination workflow. | CC BY 4.0; consulted for verification only, with original card prose and examples. | 2026-08-30 |
+| [David Austin, *Understanding Linear Algebra*, §2.3 “The span of a set of vectors”](https://understandinglinearalgebra.org/sec-span.html) | AIM-approved first-course text; claim-verification cross-check for span as all linear combinations and for testing span membership by consistency of the corresponding coefficient system. | CC BY, as recorded by the AIM Open Textbook Initiative; consulted without copying prose, exercises, or figures. | 2026-08-31 |
+| Rob Beezer, *A First Course in Linear Algebra*: [Chapter V, “Vectors”](https://linear.ups.edu/linear.ups.edu/download/fcla-twoA4-2.11.pdf) and [“Homogeneous Systems of Equations”](https://linear.ups.edu/linear.ups.edu/fcla/section-HSE.html) | Open first-course text; claim-verification cross-check for entrywise vector operations, linear combinations, span, and the zero solution of every homogeneous linear system. | GNU Free Documentation License; consulted without copying prose, exercises, or figures. | 2026-08-31 |
 
 ### Uncertainty and conditions of use
 

@@ -1,7 +1,7 @@
 # Linear Algebra card blueprint
 
-This file records retrieval decisions specific to this deck. Chapter 1 includes
-the authored cold-start pilot and its reconciled inventory; later chapters
+This file records retrieval decisions specific to this deck. Chapters 1 and 2
+include authored cold-start builds and reconciled inventories; later chapters
 remain plans only.
 
 ## Learner model
@@ -226,6 +226,108 @@ zero-row recognition moved from the leading-entry bridge to the following
 echelon diagnosis so each front retains one grading decision; no target was
 omitted. The detailed reconciliation is in
 `.flashcards/audits/pilot-cold-start.md`.
+
+## Chapter 02 pre-authoring ledger
+
+This ledger freezes the chapter boundary before card authoring. The only local
+inbound chapter is `01_linear_systems_and_elimination`; the external frontier is
+limited to the validator-resolved scheduled arithmetic and elementary-algebra
+capabilities recorded above. Coordinate-plane, line, function, matrix-product,
+subspace, independence, basis, and later terminology are not inbound.
+
+### Retrieval and card-form plan
+
+| Front order | Stable card ID | Retrieval target | Planned form and role |
+|---:|---|---|---|
+| 1 | `25347fc5-339e-4f47-8556-936ba86f0bf7` | Interpret a coordinate vector and the column convention. | `Q:/A:` minimal representation bridge and bounded inference. |
+| 2 | `cc365f12-37ca-444b-a29c-b7654c00661c` | Decide equality of coordinate vectors entry by entry. | `Q:/A:` operational definition and boundary condition. |
+| 3 | `802f1984-daa4-4814-b709-086344e0df21` | Add equal-length coordinate vectors. | `Q:/A:` minimally explained operation and supported computation. |
+| 4 | `287963aa-6e76-466c-a461-180201990b6c` | Diagnose why unequal-length vectors cannot be added here. | `Q:/A:` error diagnosis. |
+| 5 | `b16dbef4-b4ee-4a2c-a4d0-d4b3bd798e3f` | Interpret a scalar and compute scalar multiplication. | `Q:/A:` term bridge and supported computation. |
+| 6 | `8d83336b-5f61-462e-9613-9ac2caa52c97` | Identify the zero vector of a required length by its additive role. | `Q:/A:` definition and identity reasoning. |
+| 7 | `73142b11-a6ad-4b7d-90b6-341a68dc2c5b` | Translate a two-entry column vector to an arrow on newly bridged coordinate axes. | `Q:/A:` verbal-symbolic-spatial grammar bridge. |
+| 8 | `f63ba28c-c25d-48d0-9537-1ddf6cba08e7` | Interpret vector addition by a head-to-tail diagram. | `Q:/A:` figure-based representation translation. |
+| 9 | `acea6ebe-e046-447e-afb6-f10126e7561c` | Infer a negative scalar from reversed direction and doubled coordinates. | `Q:/A:` figure-based qualitative and quantitative interpretation. |
+| 10 | `18ce3653-35fa-46bf-9a90-4731c4937ecd` | Execute a mixed scalar-multiplication and vector-addition calculation. | `P:/S:` analyzed operation problem with full IPEE. |
+| 11 | `d38c064a-0451-43c4-96e4-43cf90365c9a` | Recognize the defining structure of a linear combination. | `Q:/A:` supported definition retrieval. |
+| 12 | `c82a0011-56fa-4bfd-b141-9140b8b3abf5` | Compute a linear combination of two coordinate vectors. | `P:/S:` completion problem with full IPEE. |
+| 13 | `c583b0ee-759b-45c9-988a-7ee62ffeefaa` | Translate a vector equation into simultaneous coordinate equations. | `Q:/A:` symbolic-to-system bridge. |
+| 14 | `7a060c55-f15b-4200-8218-621def98e783` | Solve a vector equation by the established linear-system method. | `P:/S:` analyzed translation and solve. |
+| 15 | `7e0fe0c9-32f9-4e88-8f16-30b8ce96df37` | Interpret span as the collection of all linear combinations. | `Q:/A:` minimal definition and membership certificate. |
+| 16 | `b1b4402a-20b9-4f16-a7b5-e493c1db276a` | Explain why every span contains the zero vector. | `Q:/A:` structural consequence and check. |
+| 17 | `83da928a-1e06-424c-86a9-a9be3fd91da2` | Connect span membership to consistency of a coefficient system. | `Q:/A:` method-selection rule. |
+| 18 | `da58b522-364e-40ac-a5e5-d78d6380fe16` | Certify span membership by finding coefficients. | `P:/S:` faded positive membership decision. |
+| 19 | `39925a04-fd90-4fd1-b771-a074760ac474` | Reject span membership from a contradiction row. | `P:/S:` independent negative membership decision. |
+| 20 | `7c4a7add-7232-4a1c-bc54-a4739f940a69` | Define a homogeneous linear system and infer its zero solution. | `Q:/A:` minimal bridge and supported inference. |
+| 21 | `ce809411-1dab-4af5-be25-ae6a97a88eaf` | Parametrize a homogeneous system and rewrite its solutions as a span. | `P:/S:` mixed representation synthesis with full IPEE. |
+| 22 | `19b93161-2c9b-4fe2-838d-a181e3b0b0e0` | Diagnose the use of a zero-target equation in a nonzero span-membership test. | `Q:/A:` vector-equation versus homogeneous-system discrimination. |
+| 23 | `c2021da9-8e70-4d17-9e81-b6ef4dac36a3` | Reject the misconception that a span contains only its listed generators. | `Q:/A:` final mixed conceptual discrimination. |
+
+No cloze is planned. Each exact symbol is introduced as part of a representation
+or reasoning decision, so isolated deletion would grade notation more than
+meaning. The six problems progress from analyzed vector arithmetic through a
+completion linear combination, an analyzed vector-equation solve, faded and
+independent span decisions, and a final homogeneous-system synthesis.
+
+### Chapter 02 concept-dependency ledger
+
+| Concept, symbol, representation, or procedure | Required on first front | Allowed inbound source or first establishment | First supported retrieval | Later application | Status |
+|---|---:|---|---|---|---|
+| Real numbers, ordered tuples/lists, entries, substitution, simultaneous equations, augmented matrices, consistency, contradiction rows, free variables, parameters, Gaussian elimination | 1 | Inbound from the resolved external capabilities and chapter 01 scheduled cards. | Chapter 01 | Throughout | ready |
+| Coordinate vector and entry order | 1 | Minimally defined on front 1 as an ordered list of real numbers. | 1 | 2–23 | ready |
+| Column-vector convention and bracket grammar | 1 | Front 1 states that this deck writes the ordered entries vertically. | 1 | 2–23 | ready |
+| Vector equality and corresponding entries | 2 | Minimally defined on front 2 using established entry order. | 2 | 3–23 | ready |
+| Vector addition and equal-length requirement | 3 | Front 3 defines addition entry by entry; front 4 isolates the length boundary. | 3–4 | 8, 10–23 | ready |
+| Scalar and scalar multiplication | 5 | Front 5 defines a scalar as a real-number multiplier and defines entrywise scaling. | 5 | 9–23 | ready |
+| Zero vector and additive identity role | 6 | Front 6 defines the all-zero vector of the required length and asks for its role. | 6 | 16, 20–23 | ready |
+| Coordinate axes, origin, positive/negative direction, vector-as-arrow convention | 7 | Minimally explained on front 7 using number-line direction and two established entries. | 7 | Figures on 8–9 | ready |
+| Head-to-tail diagram grammar and translated copy of an arrow | 8 | Front 8 describes the unchanged copied arrow and labels all endpoints. | 8 | No later front requires the diagram | ready |
+| Direction and coordinate scaling in an arrow diagram | 9 | Front 9 supplies endpoint coordinates after fronts 5 and 7. | 9 | No later front requires the diagram | ready |
+| Linear combination and coefficient | 11 | Front 11 defines the sum-of-scalar-multiples structure; `coefficient` is inbound algebra vocabulary and is applied to vector multipliers. | 11 | 12–23 | ready |
+| Vector equation and unknown scalar coefficients | 13 | Front 13 defines the form and equates corresponding entries using fronts 2 and 11. | 13–14 | 15–22 | ready |
+| Span and `span{...}` notation | 15 | Front 15 defines span as all linear combinations and introduces the notation in the same bridge. | 15 | 16–23 | ready |
+| Span-membership certificate | 15 | A displayed set of coefficients witnesses membership on front 15. | 15 | 17–19, 22–23 | ready |
+| Span-membership system test | 17 | Front 17 derives the test from the established vector equation and chapter 01 consistency. | 17 | 18–19, 22 | ready |
+| Homogeneous linear system and zero solution | 20 | Front 20 defines zero right-side constants and asks for the resulting always-valid tuple. | 20 | 21–22 | ready |
+| Parametric vector form of a homogeneous solution set | 21 | Problem front 21 requests only established elimination and span operations. | 21 | Downstream chapters | ready |
+
+Rejected examples for this chapter: matrix-vector product notation, lines or
+planes as already-known geometric objects, rotations, force or velocity models,
+computer graphics, regression, independence, bases, subspaces, and null spaces.
+They depend on later chapters, unscheduled external chapters, or undeclared
+application knowledge and are unnecessary to the target decisions.
+
+### Authentic representations and figure decisions
+
+- **Included representations:** vertical coordinate lists, verbal entry rules,
+  symbolic vector expressions, two-coordinate arrow diagrams, vector equations,
+  coordinate equation systems, augmented matrices, parametric vectors, and span
+  notation.
+- **Head-to-tail addition figure: include.** It tests a spatial translation not
+  recoverable from an array alone. The front supplies all endpoint and copied-
+  arrow grammar without naming the sum arrow.
+- **Signed scalar-multiple figure: include.** It separately tests direction
+  reversal and coordinate scaling; endpoint coordinates make the task available
+  without relying on color.
+- **Coordinate-vector arrow figure: omit as a separate asset.** Front 7 can
+  establish the complete convention in words and symbols; a second arrow-only
+  picture would duplicate front 9 rather than add a decision.
+- **Span-of-one/two-vectors region figure: omit.** Accurate interpretation would
+  require line/plane and full coordinate-plane grammar that is not inbound or a
+  declared chapter target. Algebraic coefficient systems provide the authentic
+  membership representation at the current frontier.
+- **Parallelogram variant: omit.** The head-to-tail diagram already retrieves
+  the geometric addition rule; a second construction would be redundant here.
+
+Planned inventory: 23 cards (`Q:/A:` 17, `P:/S:` 6, `C:` 0); six problems;
+two TikZ/SVG figures with distinct retrieval roles.
+
+Actual inventory: 23 cards (`Q:/A:` 17, `P:/S:` 6, `C:` 0); all six planned
+problem roles and both planned figure roles are present. The cold-start repair
+defined the membership symbol on front 15 and simplified fronts 16–17 from
+general indexed lists to two-vector forms; neither change removed a retrieval
+target. The detailed reconciliation is in
+`.flashcards/audits/02_vectors_linear_combinations_and_span-cold-start.md`.
 
 ## Initial-learning path
 
