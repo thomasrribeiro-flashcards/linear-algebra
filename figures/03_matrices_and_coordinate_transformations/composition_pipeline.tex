@@ -1,0 +1,19 @@
+\documentclass[tikz,border=5pt]{standalone}
+% flashcards-title: Two-stage coordinate transformation pipeline
+% flashcards-desc: An input vector passes through transformation A to an intermediate vector, then through transformation B to an output vector.
+\input{figures/tikz-style.tex}
+
+\begin{document}
+\begin{tikzpicture}[node distance=0.65cm]
+  \node[fc box] (x) {input\\$\mathbf x$};
+  \node[fc box,right=of x] (a) {first rule\\$A$};
+  \node[fc box,right=of a] (ax) {intermediate\\$A\mathbf x$};
+  \node[fc box,right=of ax] (b) {second rule\\$B$};
+  \node[fc box,right=of b] (out) {output};
+
+  \draw[fc flow] (x) -- (a);
+  \draw[fc flow] (a) -- (ax);
+  \draw[fc flow] (ax) -- (b);
+  \draw[fc flow] (b) -- (out);
+\end{tikzpicture}
+\end{document}

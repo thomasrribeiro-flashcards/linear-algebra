@@ -1,6 +1,6 @@
 # Linear Algebra card blueprint
 
-This file records retrieval decisions specific to this deck. Chapters 1 and 2
+This file records retrieval decisions specific to this deck. Chapters 1–3
 include authored cold-start builds and reconciled inventories; later chapters
 remain plans only.
 
@@ -328,6 +328,110 @@ defined the membership symbol on front 15 and simplified fronts 16–17 from
 general indexed lists to two-vector forms; neither change removed a retrieval
 target. The detailed reconciliation is in
 `.flashcards/audits/02_vectors_linear_combinations_and_span-cold-start.md`.
+
+## Chapter 03 pre-authoring ledger
+
+This ledger freezes the chapter boundary before card authoring. The only direct
+local inbound chapter is `02_vectors_linear_combinations_and_span`; chapter 01
+and the external decks contribute only their validator-resolved capabilities.
+Functions, bases, subspaces, inverses, determinants, eigenstructure, inner
+products, affine coordinates, and application-specific models are not inbound.
+
+### Retrieval and card-form plan
+
+| Front order | Stable card ID | Retrieval target | Planned form and role |
+|---:|---|---|---|
+| 1 | `71cc4ded-812a-4280-8275-442ceaf36bc1` | Interpret a matrix as a rectangular array and locate an entry by row and column. | `Q:/A:` minimal representation bridge. |
+| 2 | `a935c1fe-cef4-41fb-8389-ca7ee6655bbe` | Read matrix shape and indexed-entry notation. | `Q:/A:` notation bridge and supported retrieval. |
+| 3 | `e7c2dbb7-aed3-4a44-a794-489389c1bc16` | Decide matrix equality entry by entry. | `Q:/A:` operational boundary condition. |
+| 4 | `b9752adf-6bb8-479c-b0b1-81618ba8f26f` | Add same-shape matrices entrywise. | `Q:/A:` supported computation. |
+| 5 | `fb8e2aca-4231-4fba-8a1a-9b1de08eccdc` | Diagnose a matrix-addition shape mismatch. | `Q:/A:` error diagnosis. |
+| 6 | `b2404271-ab23-4b1e-ba0c-a8b2cf6dbab5` | Compute a scalar multiple of a matrix. | `Q:/A:` transfer from established vector scaling. |
+| 7 | `3e8a63c3-acec-4110-836e-e792fe07c379` | Interpret a matrix-vector product as a linear combination of columns. | `Q:/A:` definition bridge with a supported computation. |
+| 8 | `ecb6e435-edea-4282-9780-52caffc67f6d` | Infer input and output lengths from matrix shape. | `Q:/A:` dimension compatibility. |
+| 9 | `eabaa070-841b-44cd-a093-9ee4f2137658` | Compute one output entry by pairing a row with the input entries. | `Q:/A:` representation translation. |
+| 10 | `bfdfba18-2077-482d-b75a-8e2f746c7d6c` | Compute a complete matrix-vector product. | `P:/S:` analyzed first problem with full IPEE. |
+| 11 | `c43f24e5-41ca-429d-823d-a51be7b38340` | Translate `A x = b` among matrix, column-combination, and system forms. | `Q:/A:` bridge to established systems. |
+| 12 | `3ed819fc-02a0-4759-8302-0305ddb33ad6` | Recognize an identity matrix and its unchanged-vector action. | `Q:/A:` definition and role. |
+| 13 | `6e02f5fe-f7b9-4a13-8496-acab9ead944c` | Choose the identity-matrix size compatible with a vector. | `Q:/A:` size discrimination. |
+| 14 | `d9ab5b86-6c61-473f-b59e-be3455eb4395` | Form a transpose by exchanging row and column positions. | `Q:/A:` definition and supported computation. |
+| 15 | `a5b466c3-c0d3-4b62-b653-736254fd4614` | Predict the transposed shape from the row/column exchange. | `Q:/A:` structural consequence. |
+| 16 | `98832dc8-6fd3-49ba-99a9-2f1039b8fe39` | Interpret coordinate-transformation input/output notation. | `Q:/A:` local bridge because functions are not inbound. |
+| 17 | `c6bce4ef-51cc-4196-91f1-4b36bf98e6b7` | Interpret the two defining preservation rules for a linear coordinate transformation. | `Q:/A:` supported definition retrieval. |
+| 18 | `c0cc2ac0-9478-4c09-b3b0-3ebb406074e7` | Verify addition preservation in a concrete matrix transformation. | `Q:/A:` varied numerical check. |
+| 19 | `24a799fa-4f3f-4e1f-8e53-40bb43702313` | Explain why every rule `T(x)=A x` is linear. | `Q:/A:` governing column-combination argument. |
+| 20 | `2d6f9ab8-83f2-422c-9871-d5d87fd5abbb` | Interpret a matrix product column by column and determine its shape. | `Q:/A:` definition bridge. |
+| 21 | `ed265ae3-60c9-4c53-8140-e12a546a72d5` | Compute a matrix product from matrix-vector products. | `P:/S:` completion problem with full IPEE. |
+| 22 | `d6ced76a-7aeb-44f9-943a-68b3077233d7` | Diagnose product compatibility and order. | `Q:/A:` dimension-mismatch discrimination. |
+| 23 | `2cac6ed4-2562-408c-a6fe-975128ebe857` | Translate a two-stage transformation pipeline to the product in the correct order. | `Q:/A:` figure-based structural retrieval. |
+| 24 | `710cde3e-8bf2-468b-bb4d-aa28ec8b4b8a` | Compute and check a composed coordinate transformation. | `P:/S:` faded composition problem with full IPEE. |
+| 25 | `5b1a7a45-7421-4167-a086-640f04e34d63` | Construct a matrix from the outputs of the two special coordinate inputs. | `P:/S:` independent figure-to-symbol translation with full IPEE. |
+| 26 | `731ba8cc-2c18-4ba7-a0c3-7fe44606cca8` | Reject the assumption that reversing matrix factors preserves a product. | `Q:/A:` final mixed misconception diagnosis. |
+
+No cloze is planned. Each compact notation item participates in a reasoning or
+representation decision, so deletion would grade symbols more than meaning.
+The four problems progress from an analyzed matrix-vector calculation through a
+completion matrix product, a faded composition, and independent matrix
+construction from transformation data.
+
+### Chapter 03 concept-dependency ledger
+
+| Concept, symbol, representation, or procedure | Required on first front | Allowed inbound source or first establishment | First supported retrieval | Later application | Status |
+|---|---:|---|---|---|---|
+| Real scalars; rectangular arrays; rows, columns, entries; coordinate vectors; vector equality, addition, scaling, linear combinations; vector equations and systems | 1 | Inbound from the resolved external capabilities and chapters 01–02. | Chapters 01–02 | Throughout | ready |
+| Matrix as a rectangular array | 1 | Front 1 defines the object using established array, row, column, and entry language. | 1 | 2–26 | ready |
+| Matrix shape `m x n` and indexed entry `a_ij` | 2 | Front 2 explicitly states row-first shape and index order. | 2 | 3–26 | ready |
+| Matrix equality | 3 | Front 3 defines equality by same shape and corresponding entries. | 3 | 4–26 | ready |
+| Matrix addition and same-shape condition | 4 | Front 4 defines entrywise addition; front 5 isolates the boundary. | 4–5 | 19, 26 and downstream | ready |
+| Scalar–matrix multiplication | 6 | Front 6 extends established scalar–vector multiplication entrywise. | 6 | 19 and downstream | ready |
+| Matrix–vector product `A x` and column-combination interpretation | 7 | Front 7 defines the product from established linear combinations. | 7 | 8–26 | ready |
+| Matrix–vector compatibility and output length | 8 | Front 8 derives both lengths from column count and column length. | 8 | 10–26 | ready |
+| Row-by-input computation rule | 9 | Front 9 derives one entry from the already established column combination. | 9–10 | 18, 21, 24–26 | ready |
+| Matrix equation `A x = b` | 11 | Front 11 equates it with an established vector equation and linear system. | 11 | 19 and downstream | ready |
+| Identity matrix `I_n`, diagonal positions, and unchanged-vector action | 12 | Front 12 defines its entries and demonstrates its column-combination action. | 12–13 | 25–26 and downstream | ready |
+| Transpose `A^T` and row/column exchange | 14 | Front 14 defines the position swap with a concrete matrix. | 14–15 | Downstream | ready |
+| Coordinate transformation, input/output, `T(x)` notation | 16 | Front 16 defines the rule and notation using only coordinate vectors. | 16 | 17–25 | ready |
+| Linear coordinate transformation | 17 | Front 17 states and interprets the addition and scaling preservation rules. | 17–19 | 23–25 and downstream | ready |
+| Matrix product `AB`, factor order, and column construction | 20 | Front 20 defines `AB` as the matrix with columns `A` times the columns of `B`. | 20–22 | 23–26 | ready |
+| Composition as applying one transformation and then another | 23 | Front 23 defines the two-stage pipeline in words and a diagram after both matrix transformations and products are established. | 23–24 | 26 and downstream | ready |
+| Special inputs `[1,0]^T` and `[0,1]^T` select the first and second columns | 25 | The problem front explains that each input supplies the weights on the two columns; no basis terminology is used. | 25 | Downstream basis work | ready |
+| Noncommutativity of matrix multiplication | 26 | Front 26 provides an explicit same-size pair after product order and composition are established. | 26 | Downstream | ready |
+
+Rejected examples for this chapter: named functions from algebra, affine
+translations, rotations described by trigonometry, computer-graphics pipelines,
+Markov chains, regression, elementary matrices, inverses, determinants, bases,
+subspaces, rank, and eigenvectors. They require unscheduled external knowledge,
+later chapters, or application-specific bridges not needed for these targets.
+
+### Authentic representations and figure decisions
+
+- **Included representations:** rectangular arrays, indexed entries, columns as
+  coordinate vectors, row computations, matrix equations, input/output notation,
+  and sequential transformation products.
+- **Composition-order pipeline: include.** A compact left-to-right diagram tests
+  the structural translation from temporal order to the right-to-left product;
+  it does not display the answer product.
+- **Special-input transformation diagram: include.** Separate input and output
+  coordinate-arrow panels make matrix construction a genuine spatial-to-symbolic
+  translation without invoking the future term `basis`.
+- **General before/after grid: omit.** It would require introducing image-grid
+  conventions and could suggest unsupported claims about all points when the
+  scheduled target is construction from two explicit input-output pairs.
+- **Entrywise addition/scaling figures: omit.** Exact arrays are the authentic
+  representation, and a diagram would duplicate rather than improve retrieval.
+- **Transpose flip animation or figure: omit.** The indexed and concrete array
+  prompts grade the row/column exchange more precisely without adding a spatial
+  convention.
+
+Planned inventory: 26 cards (`Q:/A:` 22, `P:/S:` 4, `C:` 0); four problems;
+two TikZ/SVG figures with distinct retrieval roles.
+
+Actual inventory: 26 cards (`Q:/A:` 22, `P:/S:` 4, `C:` 0); all four planned
+problem roles and both planned figure roles are present. The cold-start repair
+made the `\longmapsto` direction explicit on front 25 and replaced unexplained
+`commute` terminology on front 26 with a direct factor-reversal diagnosis; no
+retrieval target was omitted. The detailed reconciliation is in
+`.flashcards/audits/03_matrices_and_coordinate_transformations-cold-start.md`.
 
 ## Initial-learning path
 

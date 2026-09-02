@@ -1,0 +1,39 @@
+\documentclass[tikz,border=5pt]{standalone}
+% flashcards-title: Outputs of two special coordinate inputs
+% flashcards-desc: Two rows of coordinate plots show input [1,0] sent to output [2,1], and input [0,1] sent to output [-1,3].
+\input{figures/tikz-style.tex}
+
+\begin{document}
+\begin{tikzpicture}[x=0.72cm,y=0.72cm]
+  \node[fc label,font=\sffamily\bfseries] at (-2.6,2.35) {input};
+  \node[fc label,font=\sffamily\bfseries] at (2.6,2.35) {output};
+
+  \begin{scope}[shift={(-2.6,1)}]
+    \draw[fc axis] (-1.25,0) -- (1.55,0);
+    \draw[fc axis] (0,-1.15) -- (0,1.35);
+    \draw[fc primary] (0,0) -- (1,0);
+    \node[fc label,above] at (1,0) {$\left[\begin{smallmatrix}1\\0\end{smallmatrix}\right]$};
+  \end{scope}
+  \node[fc label] at (0,1) {$\longmapsto$};
+  \begin{scope}[shift={(2.6,1)}]
+    \draw[fc axis] (-1.35,0) -- (2.55,0);
+    \draw[fc axis] (0,-1.15) -- (0,1.75);
+    \draw[fc secondary] (0,0) -- (2,1);
+    \node[fc label,above left] at (2,1) {$\left[\begin{smallmatrix}2\\1\end{smallmatrix}\right]$};
+  \end{scope}
+
+  \begin{scope}[shift={(-2.6,-1.8)}]
+    \draw[fc axis] (-1.25,0) -- (1.55,0);
+    \draw[fc axis] (0,-1.15) -- (0,1.45);
+    \draw[fc primary] (0,0) -- (0,1);
+    \node[fc label,right] at (0,1) {$\left[\begin{smallmatrix}0\\1\end{smallmatrix}\right]$};
+  \end{scope}
+  \node[fc label] at (0,-1.8) {$\longmapsto$};
+  \begin{scope}[shift={(2.6,-1.8)}]
+    \draw[fc axis] (-1.75,0) -- (1.35,0);
+    \draw[fc axis] (0,-1.15) -- (0,3.55);
+    \draw[fc secondary] (0,0) -- (-1,3);
+    \node[fc label,above right] at (-1,3) {$\left[\begin{smallmatrix}-1\\3\end{smallmatrix}\right]$};
+  \end{scope}
+\end{tikzpicture}
+\end{document}
