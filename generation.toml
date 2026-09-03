@@ -56,3 +56,22 @@ catalog_hash = "sha256:3c40a544e9bb830b67d7998607f5b149d9722126a5c680729988285ae
 context_hash = "sha256:acd9f106387d2900b31f7d46178e903e2af4b0a9dc7f05b43c2e59843dfcbb59"
 base_commit = "2e423c4b123cf7141d0ed415402feb86fe7f50c6"
 provenance_source = "website-generation-request"
+
+[[runs]]
+artifacts = [".flashcards/audits/04_subspaces_and_fundamental_spaces-cold-start.md", "CARD_README.md", "README.md", "figures/04_subspaces_and_fundamental_spaces/fundamental_spaces_map.svg", "figures/04_subspaces_and_fundamental_spaces/fundamental_spaces_map.tex", "flashcards/04_subspaces_and_fundamental_spaces.md"]
+run_id = "request-30"
+request_id = "30"
+operation = "chapter-content"
+provider_id = "openai"
+model_id = "gpt-5.6-sol"
+reasoning_effort = "high"
+generated_at = "2026-09-03T17:43:08.705Z"
+generation_mode = "generate"
+chapter_id = "04_subspaces_and_fundamental_spaces"
+workflow_version = "chapter-content-v1"
+workflow_commit = "bb855b303160b7ad8ffce87ac0c815a8e4869cda"
+registry_base_commit = "4e218e44dc09aaa6a57664168b3a1c8e4634ac37"
+catalog_hash = "sha256:74ff671cda53f05cda973bf8aaf503b05314e79d087778a5b39e20a12aae5ad5"
+context_hash = "sha256:ba6b22c4a013669dfe352bfd10c2e27258ece3df03f8c27b35b083be6b5d77bc"
+base_commit = "0da3ef33737146e70e4c230dd163760a13f840e6"
+provenance_source = "website-generation-request"

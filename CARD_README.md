@@ -1,6 +1,6 @@
 # Linear Algebra card blueprint
 
-This file records retrieval decisions specific to this deck. Chapters 1–3
+This file records retrieval decisions specific to this deck. Chapters 1–4
 include authored cold-start builds and reconciled inventories; later chapters
 remain plans only.
 
@@ -432,6 +432,117 @@ made the `\longmapsto` direction explicit on front 25 and replaced unexplained
 `commute` terminology on front 26 with a direct factor-reversal diagnosis; no
 retrieval target was omitted. The detailed reconciliation is in
 `.flashcards/audits/03_matrices_and_coordinate_transformations-cold-start.md`.
+
+## Chapter 04 pre-authoring ledger
+
+This ledger freezes the chapter boundary before card authoring. The only direct
+local inbound chapter is `03_matrices_and_coordinate_transformations`; chapters
+01–02 and the external decks contribute only their validator-resolved scheduled
+capabilities. Basis, linear independence, dimension, rank-nullity, inverses,
+determinants, eigenstructure, inner products, affine terminology, and
+application-specific models are not inbound.
+
+### Retrieval and card-form plan
+
+| Front order | Stable card ID | Retrieval target | Planned form and role |
+|---:|---|---|---|
+| 1 | `d26214af-79bb-4142-bf71-287e8a526316` | Interpret the collection of all fixed-length real coordinate vectors as a real vector space. | `Q:/A:` minimal definition bridge and supported inference. |
+| 2 | `616bc192-7003-49c5-8ed6-35433c75709b` | Recognize fixed-shape matrices as another vector space under established operations. | `Q:/A:` varied representation. |
+| 3 | `c0c04658-f35f-4568-b52a-cd99e90a3190` | Interpret a subspace as a subset that is a vector space under inherited operations. | `Q:/A:` definition bridge. |
+| 4 | `bdc6976e-47e4-4925-917c-dd1505f8f12b` | State the zero, addition-closure, and scalar-closure subspace test. | `Q:/A:` supported operational retrieval. |
+| 5 | `c9fe5c20-88a6-4a18-9aa1-57591c1766bd` | Apply the subspace test to a homogeneous coordinate constraint. | `P:/S:` analyzed first problem with full IPEE. |
+| 6 | `d76c4306-4bde-4545-b5e4-8a07bf4a17b7` | Explain why every span is a subspace. | `Q:/A:` governing closure argument. |
+| 7 | `a5d8d561-a281-405f-9606-1604945e5029` | Disprove subspace status with one scalar-closure counterexample. | `Q:/A:` misconception diagnosis. |
+| 8 | `1ee374d9-0a14-49fd-83c5-9bb5a036f488` | Explain why a nonzero-target system solution set fails the zero-vector test. | `Q:/A:` homogeneous/nonhomogeneous contrast. |
+| 9 | `eef0e657-488c-4c90-9644-51a75a9bbb52` | Interpret `N(A)` as the null space and locate it on the input side. | `Q:/A:` definition and ambient-length bridge. |
+| 10 | `fd38ee1f-9b15-43f4-bf53-e9b700e30113` | Explain why a null space is a subspace. | `Q:/A:` linearity argument. |
+| 11 | `748327c8-db25-4c5d-abf8-38e6e1cf790e` | Compute a null space in parametric span form. | `P:/S:` completion problem with full IPEE. |
+| 12 | `21d8cc66-6095-4db2-845c-5352286765f1` | Connect a transformation kernel with a matrix null space. | `Q:/A:` terminology and representation translation. |
+| 13 | `2a9f4a5f-c3d5-4992-9667-02f49230c4b8` | Interpret the column space as the span of matrix columns and locate it on the output side. | `Q:/A:` definition bridge. |
+| 14 | `fbba2858-d2fa-467f-acc4-1c9c000b64e6` | Connect a transformation image with a matrix column space. | `Q:/A:` terminology and representation translation. |
+| 15 | `237fbfa4-8a5d-4326-8336-3c1604a45be1` | Link consistency of `A x = b` to column-space membership. | `Q:/A:` method-selection rule. |
+| 16 | `ae540adf-683d-4a03-b8fd-01e677a57a0e` | Decide column-space membership by solving a coefficient system. | `P:/S:` faded application with full IPEE. |
+| 17 | `f7bc2802-2c72-44b6-8885-69b4e9439367` | Explain why a column space is a subspace. | `Q:/A:` span transfer. |
+| 18 | `c286ac05-2be6-4fba-9bd6-6e9492625e11` | Interpret row space as the span of rows and as the column space of the transpose. | `Q:/A:` representation bridge. |
+| 19 | `557cbf6a-43d1-47e0-bec5-5566096d4ff5` | Compute a row-space spanning description from nonzero RREF rows. | `P:/S:` faded symbolic problem with full IPEE. |
+| 20 | `7dfedc32-5c99-4877-8bb7-912fad921262` | Interpret the left null space as `N(A^T)` and locate it on the output side. | `Q:/A:` definition and ambient-length bridge. |
+| 21 | `b1d130a2-642f-4ac9-a172-d8da0ac25d4c` | Compute a left null space through `A^T y = 0`. | `P:/S:` independent problem with full IPEE. |
+| 22 | `e523b540-b8cd-4446-a2d0-312aea8f88e9` | Identify the two fundamental spaces consisting of input-length vectors. | `Q:/A:` figure-based relational retrieval. |
+| 23 | `6f1e05d6-b4ac-4d02-96f2-a4d15f80d0ec` | Identify the two fundamental spaces consisting of output-length vectors. | `Q:/A:` figure-based relational retrieval. |
+| 24 | `ae4de958-99e3-4aa6-9036-00095ed9d9d9` | Interpret matrix rank as the number of pivot positions in RREF. | `Q:/A:` definition bridge. |
+| 25 | `ab7852fa-93f5-47a9-9d43-e13f036a9fee` | Compute rank from an echelon matrix. | `Q:/A:` supported computation. |
+| 26 | `8cf924b9-7e5e-4e85-8ca5-5090e169b6df` | Select original pivot columns, not reduced columns, to span the original column space. | `Q:/A:` error diagnosis and method rule. |
+| 27 | `fd864615-6c1d-483e-bffe-ce02f11b8bad` | Connect rank with the number of nonzero RREF rows and original pivot columns. | `Q:/A:` structural consequence without dimension terminology. |
+| 28 | `36048395-3336-46a4-a0d6-778ddc249d5a` | Use one reduction record to produce spanning descriptions of the row and column spaces. | `P:/S:` mixed method-selection problem with full IPEE. |
+| 29 | `a1668050-7b62-45ec-a0c8-4e049775e987` | Name the four fundamental spaces of a matrix from their defining equations or spans. | `Q:/A:` relational synthesis. |
+| 30 | `336ba51b-af9d-48dd-ab5f-2fa5d53e0f80` | Discriminate kernel/null-space input questions from image/column-space output questions. | `Q:/A:` final mixed diagnosis. |
+
+No cloze is planned. Each symbol names a relationship that is better retrieved
+through a bounded explanation or calculation. The six problems progress from
+an analyzed subspace test through completion null-space work, faded column- and
+row-space work, independent left-null computation, and a mixed spanning-method
+choice.
+
+### Chapter 04 concept-dependency ledger
+
+| Concept, symbol, representation, or procedure | Required on first front | Allowed inbound source or first establishment | First supported retrieval | Later application | Status |
+|---|---:|---|---|---|---|
+| Real scalars; coordinate vectors; vector and matrix addition/scaling; zero vectors; spans; homogeneous systems; RREF; pivots; matrix transformations and transpose | 1 | Resolved external capabilities and chapters 01–03. | Chapters 01–03 | Throughout | ready |
+| `R^n` as all `n`-entry real coordinate vectors; real vector space | 1 | Front 1 defines both using established coordinate-vector operations and laws. | 1 | 2–30 | ready |
+| Fixed-shape matrix vector space | 2 | Front 2 applies front 1's definition to established matrix operations. | 2 | 3–30 | ready |
+| Subset, ambient vector space, inherited operations, subspace | 3 | Front 3 defines the relationship using collection membership and front 1. | 3 | 4–30 | ready |
+| Closure; zero/addition/scalar subspace test | 4 | Front 4 defines closure and states the three tests. | 4–5 | 6–10, 17 | ready |
+| Counterexample as one decisive failed universal test | 7 | Front 7 demonstrates failure using established scaling. | 7 | 8 and later diagnoses | ready |
+| Null space `N(A)` and input-side ambient length | 9 | Front 9 defines the homogeneous solution set for an `m x n` matrix. | 9–10 | 11–12, 20–30 | ready |
+| Kernel of a transformation | 12 | Front 12 defines it as inputs sent to zero and connects `T(x)=Ax` to front 9. | 12 | 22, 29–30 | ready |
+| Column space `Col(A)` and output-side ambient length | 13 | Front 13 defines it as the span of established matrix columns. | 13 | 14–17, 22–30 | ready |
+| Image of a transformation | 14 | Front 14 defines it as all attainable outputs and connects `T(x)=Ax` to front 13. | 14 | 15–17, 23, 29–30 | ready |
+| Column-space solvability test | 15 | Derived from the established column-combination definition of `Ax`. | 15–16 | 30 and downstream | ready |
+| Row space `Row(A)` and `Col(A^T)` representation | 18 | Front 18 defines rows as `n`-entry vectors and uses the established transpose. | 18–19 | 22, 27–29 | ready |
+| Reversible row operations preserve row span | 19 | The problem front explains the row-combination and reversibility reason. | 19 | 27–28 | ready |
+| Left null space `N(A^T)` and output-side ambient length | 20 | Front 20 defines it from the established transpose and null-space rule. | 20–21 | 23, 29 | ready |
+| Fundamental-space map diagram grammar | 22 | Front 22 explains the `m x n` input/output sides and the arrows labeled `A` and `A^T`. | 22–23 | 29–30 | ready |
+| Matrix rank | 24 | Front 24 defines rank as the RREF pivot count using inbound pivot grammar. | 24–25 | 26–28 | ready |
+| Original pivot-column rule and nonzero-RREF-row rule | 26 | Fronts 26–27 explain which representatives preserve the two spans. | 26–28 | Downstream basis work | ready |
+| Four fundamental spaces as a collective term | 29 | The four members have each been established and retrieved before the collective label. | 29 | Downstream | ready |
+
+Rejected examples for this chapter: lines and planes treated as already-known
+geometric objects, affine-solution terminology, independence, bases, dimension,
+rank-nullity, orthogonal complements, inverse criteria, determinants,
+eigenvectors, regression, networks, graphics, and differential systems. They
+belong to unscheduled external material, later chapters, or application decks.
+
+### Authentic representations and figure decisions
+
+- **Included representations:** coordinate collections, fixed-shape matrix
+  collections, verbal closure rules, equations defining vector collections,
+  parametric spans, matrix equations, transposes, RREF records, and an
+  input/output relationship diagram.
+- **Fundamental-space input/output map: include.** One compact TikZ/SVG diagram
+  shows an `m x n` matrix sending `n`-entry inputs to `m`-entry outputs and the
+  transpose acting in reverse. Two fronts use it to retrieve which established
+  spaces live on each side; the figure contains no answer labels.
+- **Subspace inside ambient-space sketch: omit.** A line/plane drawing would
+  import unscheduled coordinate-plane grammar and could make a special geometric
+  case look like the definition.
+- **Venn diagram of the four spaces: omit.** The spaces live in two different
+  ambient coordinate spaces and are not four overlapping regions of one set.
+- **Row-reduction flow figure: omit.** Exact matrices and operation records are
+  the authentic representation; a separate diagram would duplicate the method.
+- **Kernel/image arrow-cloud diagram: omit separately.** The included
+  fundamental-space map already supplies the distinct domain/codomain retrieval
+  role without decorative point clouds.
+
+Planned inventory: 30 cards (`Q:/A:` 24, `P:/S:` 6, `C:` 0); six problems;
+one TikZ/SVG figure supporting two distinct relational fronts.
+
+Actual inventory: 30 cards (`Q:/A:` 24, `P:/S:` 6, `C:` 0); all six planned
+problem roles are present; one TikZ/SVG figure supports the two planned
+input/output-side retrievals. The front-only cold-start scan moved the
+row-space-invariance bridge from a solution onto front 19 and expanded the
+vector-space and set-builder bridges on fronts 1 and 9. No retrieval target,
+problem role, or figure opportunity was omitted. The detailed reconciliation
+is in `.flashcards/audits/04_subspaces_and_fundamental_spaces-cold-start.md`.
 
 ## Initial-learning path
 
