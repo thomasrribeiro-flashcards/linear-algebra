@@ -128,104 +128,38 @@ not quotas, and may be shortened when a decision is already secure.
 | 10 Duality/tensors | Functional evaluation, dual basis, coordinate transformation laws, bilinear/quadratic classification, tensor input/output arity, determinant as alternating form. | Possible: short notation for dual basis or tensor product after meaning; zero clozes is acceptable because variance conventions demand reasoning. | Analyzed functional → completion dual basis → faded bilinear coordinate change → independent tensor-product interpretation → mixed vector/covector/form/tensor discrimination. | Covector level sets, matrices of forms, multilinear input-output diagrams, index arrays. **Include later:** functional parallel-level-set picture, dual-basis pairing grid, tensor wiring/arity diagram. **Omit:** tensor calculus, manifolds, Einstein summation until explicitly established. |
 | 11 Spectral/SVD | Symmetric/Hermitian tests, positivity, spectral hypotheses, singular directions/values, pseudoinverse, low-rank approximation, matrix-norm meaning, factorization selection. | Possible: factorization names or compact identities after conceptual contrasts; theorem hypotheses should be retrieved with conditions, not slogan clozes. | Analyzed symmetric spectral geometry → completion singular-value step → faded SVD reconstruction → independent pseudoinverse/low-rank decision → mixed LU/QR/eigen/SVD selection. | Orthogonal axes, unit circle/sphere to ellipse/ellipsoid, factorization chains, singular-value tables. **Include later:** spectral axes, SVD geometry, rank-`k` approximation sequence, factorization-purpose map. **Omit:** production compression datasets and numerical error claims. |
 
-## Pilot chapter 01 pre-authoring ledger
+## Chapter 01 build ledger — refreshed 2026-09-05
 
-This ledger freezes the build before card authoring. The pilot uses only the
-validator-resolved inbound capabilities named above. It does not assume the
-unscheduled algebra chapters on systems, coordinate planes, lines, functions,
-or polynomial expressions.
+The current chapter-1 plan and concept frontier are recorded in the
+[chapter design ledger](.flashcards/audits/01_linear_systems_and_elimination-design.md).
+It was written before the chapter-sized revision and maps all 39 fronts to
+stable IDs, retrieval targets, forms, allowed dependencies, first explanations,
+supported retrieval and later application. It supersedes the earlier 27-card
+pilot ledger in this section only; all later-chapter plans are unchanged.
 
-### Retrieval and card-form plan
+The [cold-start audit](.flashcards/audits/01_linear_systems_and_elimination-cold-start.md)
+contains the chapter-boundary handoff, all 39 front dependency records, a
+separate first-use scan, identity findings, answer checks and validation evidence.
 
-| Front order | Stable card ID | Retrieval target | Planned form and role |
-|---:|---|---|---|
-| 1 | `aafa6b16-5328-459a-bdaf-1dd5bc51d152` | Interpret two equations required simultaneously. | `Q:/A:` minimal teaching bridge and bounded inference. |
-| 2 | `c4bd6239-b161-43f9-b605-f68c83c5fbb0` | Recognize the locally defined form of a linear equation. | `Q:/A:` operational definition and discrimination. |
-| 3 | `41008c2c-81a2-4c09-935f-1cf00a05e5f7` | State when values solve a linear system. | `Q:/A:` supported definition retrieval. |
-| 4 | `46faa379-70c9-4796-9da7-d702f891aa75` | Encode variable values in an ordered solution tuple. | `Q:/A:` notation bridge and translation. |
-| 5 | `fa5056f3-1dff-4a2b-8c80-0649c3c34344` | Check a proposed tuple against every equation. | `Q:/A:` varied application and misconception repair. |
-| 6 | `43a2b6b5-d513-4ccc-a4ad-abfb9b41b8ac` | Interpret rows, columns, brackets, and the augmentation bar. | `Q:/A:` representation bridge. |
-| 7 | `a1715ef3-92e4-4070-b50c-7b5a25338280` | Translate equations to an augmented matrix. | `Q:/A:` symbolic-to-array translation. |
-| 8 | `d94d40ec-df51-40e3-8391-a317e75ff68a` | Translate an augmented matrix back to equations. | `Q:/A:` reverse translation. |
-| 9 | `030f55d1-4652-4e87-9876-2023913255b6` | Explain why swapping rows preserves solutions. | `Q:/A:` first reversible operation. |
-| 10 | `cdea1488-87fa-488b-b194-bcc35c7ef19d` | Explain why row scaling requires a nonzero number. | `Q:/A:` boundary condition and error diagnosis. |
-| 11 | `e9410163-68c4-4965-a160-a2240d261ebe` | Explain why row replacement preserves solutions. | `Q:/A:` reversible-operation reasoning. |
-| 12 | `56abea86-58ce-4268-a3bb-d1a830c676db` | Recall the complete elementary-row-operation set. | `Q:/A:` bounded three-part procedure inventory. |
-| 13 | `36bc1d25-12f9-4270-a872-490655481662` | Connect row equivalence to an unchanged solution set. | `Q:/A:` governing invariant. |
-| 14 | `774fbcbe-967e-4787-aaaf-a6c4ed362895` | Choose and execute one eliminating row replacement. | `P:/S:` analyzed first problem with full IPEE support. |
-| 15 | `a58e7ac9-d677-4fda-9aac-100adc2e008d` | Locate a row's leading entry. | `Q:/A:` vocabulary bridge. |
-| 16 | `9aa1a776-94f2-453b-ae03-877e5e453a38` | Recognize a zero row and diagnose a violated echelon-form condition. | `Q:/A:` supported structural discrimination. |
-| 17 | `07cc2c26-8bda-4586-9339-43c418a45561` | Distinguish reduced echelon form from echelon form. | `Q:/A:` neighboring-form contrast. |
-| 18 | `1ae77cc1-a2d5-46c5-a39e-cab0e409275f` | Classify pivot and free variables. | `Q:/A:` notation-free structural interpretation. |
-| 19 | `f5cfb904-2b69-4e17-a28e-d5c98aeb2c66` | Detect inconsistency from a contradiction row. | `Q:/A:` condition and error diagnosis. |
-| 20 | `94630305-24b2-4691-972d-228f465f27c7` | Use free variables to distinguish unique from infinite solutions. | `Q:/A:` solution-case discrimination. |
-| 21 | `5d387a4c-7fa9-440e-8581-d8513558f8b7` | Introduce a parameter and write all solution tuples. | `Q:/A:` parametric-representation bridge. |
-| 22 | `624e45a6-404b-410c-9225-ee9dd65bd2f5` | State the Gaussian-elimination workflow and invariant. | `Q:/A:` method-selection and justification. |
-| 23 | `c57c2f83-581f-4259-b3c4-f42d43bb2e76` | Read pivots, a free variable, and a parametrization from RREF. | `P:/S:` completion/faded interpretation with full IPEE. |
-| 24 | `41e066d3-fc37-4243-a32f-620ed132dfe2` | Solve a small system independently by elimination. | `P:/S:` independent execution with substitution check. |
-| 25 | `678357f5-ffbb-4fe0-b8f1-f225553d0322` | Classify a system with a contradiction as having no solution. | `P:/S:` independent case classification. |
-| 26 | `695ed977-e266-4f3b-85da-0fb96e40af16` | Parametrize an infinite solution set after a zero row appears. | `P:/S:` independent parametrization. |
-| 27 | `fa06f1b1-8509-408f-8ebb-b80210f0696d` | Give contradiction priority over the presence of a free variable. | `P:/S:` mixed-case discrimination. |
+| Inventory, chapter 01 | Planned | Actual | Reconciliation |
+|---|---:|---:|---|
+| Basic Q/A | 30 | 30 | Nine additions bridge real values, solution sets, zero rows, consistency and free choices, and contrast linear form/RREF/solution cases and row-swap choice. |
+| Problem P/S | 9 | 9 | Six retained targets plus multiplier completion, back-substitution completion and two-parameter transfer. |
+| Cloze C | 0 | 0 | No exact deletion adds a useful decision beyond reasoning and representation retrieval. |
+| Figures | 0 | 0 | All opportunities individually assessed in design ledger; native arrays carry the relevant structural targets. |
+| Total cards | 39 | 39 | All 27 original IDs retained; 12 new IDs; no removals or unexplained omissions. |
 
-No cloze is planned: every candidate term or condition is better graded through
-an explanation, representation decision, or structural diagnosis. Problems
-progress from an analyzed single operation through RREF reading, an independent
-solve, separate no-solution and infinite-solution cases, and a final mixed
-discrimination.
+Problem order: analyzed replacement → multiplier completion → analyzed
+back-substitution completion → faded RREF parametrization → two-parameter
+transfer → independent unique/no/infinite systems → mixed contradiction-first
+classification. Every solution uses all four IPEE stages and a genuine check.
 
-### Pilot concept-dependency ledger
-
-| Concept, symbol, representation, or procedure | Required on first front | Allowed inbound source or first establishment | First supported retrieval | Later application | Status |
-|---|---:|---|---|---|---|
-| Equation, variable, coefficient, constant, substitution, equality-preserving rewrite | 1 | Inbound from scheduled algebra capability summaries. | 1–3 | Throughout | ready |
-| Simultaneous requirements | 1 | Minimally explained on front 1 using two inbound equations. | 1 | 3, 5 and all problems | ready |
-| Linear equation in two variables; fixed-number coefficient form | 2 | Minimally defined on front 2 using inbound variables, coefficients, sums, and equality. | 2 | 3, 7–8 and all problems | ready |
-| Linear system and system solution | 3 | Minimally defined on front 3 from fronts 1–2. | 3 | 5 and all later system work | ready |
-| Ordered tuple and `(x,y)` position convention | 4 | Minimally explained on front 4 using established variable values. | 4 | 5, 21, 23–26 | ready |
-| Augmented matrix; brackets, row, column, entry, augmentation bar | 6 | Minimally explained on front 6 from an established system. | 6–8 | 9–20 and 22–27 | ready |
-| Coefficient/constant placement in an augmented matrix | 6 | Front 6 bridge. | 6–8 | All elimination problems | ready |
-| Row swap | 9 | Explained on front 9 as exchanging equation order. | 9, 12 | 13–14 and 22–27 | ready |
-| Row scaling by a nonzero number | 10 | Explained on front 10 from equality-preserving multiplication and reversibility. | 10, 12 | 13–14 and 22–27 | ready |
-| Row replacement by adding a multiple of another row | 11 | Explained on front 11 with its reversing subtraction. | 11–12 | 13–14 and 22–27 | ready |
-| Elementary row operation | 12 | Collective name applied after all three operations are established. | 12 | 13–14 and 22–27 | ready |
-| Row-equivalent matrices and solution-set invariance | 13 | Defined and justified on front 13 from reversible row operations. | 13 | 14 and 22–27 | ready |
-| Solution set | 13 | Defined on front 13 as the collection of all solution tuples. | 13 | 20–27 | ready |
-| Replacement notation `row 2 ← row 2 - 2(row 1)` | 14 | Minimally decoded on problem front 14 using established row replacement. | 14 | 22–27 | ready |
-| Leading entry | 15 | Minimally defined on front 15 using established rows and entries. | 15 | 16–20 and 23–27 | ready |
-| Zero row and echelon form | 16 | Zero row and the three echelon conditions are stated on front 16 using front 15. | 16 | 17–20 and 22–27 | ready |
-| Reduced row echelon form (RREF) | 17 | Extra leading-one and pivot-column conditions stated on front 17. | 17 | 18–21 and 23, 27 | ready |
-| Pivot position, pivot variable, free variable | 18 | Defined on front 18 from established RREF and variable columns. | 18 | 20–21, 23, 26–27 | ready |
-| Consistent, inconsistent, contradiction row | 19 | Defined on front 19; `0=1` is interpreted with inbound equality. | 19 | 20 and 25–27 | ready |
-| Real-number domain | 20 | Minimally bridged on front 20 as values represented on the usual number line. | 20 | 21, 23, 26 | ready |
-| Unique, none, or infinitely many solutions | 19 | No-solution case established on 19; consistent cases contrasted on 20. | 19–20 | 23–27 | ready |
-| Parameter `t` and parametric description | 21 | Minimally explained and worked on front 21 after free variables and tuples. | 21 | 23 and 26 | ready |
-| Gaussian elimination and back-substitution | 22 | Workflow minimally explained on front 22 from established row operations and echelon form. | 22 | 24–26 | ready |
-
-### Authentic representations and figure decisions
-
-- **Included representations:** equation systems, ordered solution tuples,
-  augmented arrays, verbal row-operation descriptions, row-replacement
-  notation, echelon/RREF arrays, and parametric tuples.
-- **Solution-set intersection sketch: omitted for the pilot.** Coordinate axes,
-  equation graphs, and line grammar are not inbound; teaching them here would
-  create a separate dependency chain without improving elimination retrieval.
-- **Before/after row-operation figure: omitted.** The exact augmented arrays and
-  operation notation are the authentic representation; a separate diagram
-  would duplicate the same decision rather than add spatial retrieval.
-- **Solution-case decision tree: omitted.** It would expose the classification
-  logic on a front or become a decorative answer summary. The mixed final
-  problem retrieves that logic directly.
-
-Planned inventory: 27 cards (`Q:/A:` 21, `P:/S:` 6, `C:` 0); six problems in
-the progression above; zero figures, with all identified opportunities
-intentionally omitted for prerequisite or retrieval-role reasons.
-
-Actual pilot inventory: 27 cards (`Q:/A:` 21, `P:/S:` 6, `C:` 0); all six
-planned problem stages are present; zero figures. During the first-use repair,
-zero-row recognition moved from the leading-entry bridge to the following
-echelon diagnosis so each front retains one grading decision; no target was
-omitted. The detailed reconciliation is in
-`.flashcards/audits/pilot-cold-start.md`.
+Equation/array translation, elimination states, echelon/RREF structural
+inspection, and parametric tuples remain authentic native mathematical
+representations. Line/plane graphs would require unseen coordinate grammar;
+vector, determinant and transformation figures would cross the chapter
+boundary. A separate picture of the same exact arrays would add no retrieval
+role. No later chapter or prerequisite asset is modified by this revision.
 
 ## Chapter 02 pre-authoring ledger
 
