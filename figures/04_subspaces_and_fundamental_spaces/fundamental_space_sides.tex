@@ -1,0 +1,14 @@
+\documentclass[tikz,border=5pt]{standalone}
+% flashcards-title: Input and output sides of a rectangular matrix
+% flashcards-desc: A solid arrow labeled A goes from n-entry coordinate vectors to m-entry coordinate vectors, while a dashed arrow labeled A transpose points back.
+\input{figures/tikz-style.tex}
+
+\begin{document}
+\begin{tikzpicture}[node distance=2.15cm]
+  \node[fc box] (input) {input side\\$n$-entry coordinate vectors};
+  \node[fc box,right=of input] (output) {output side\\$m$-entry coordinate vectors};
+
+  \draw[fc flow] ([yshift=4pt]input.east) -- node[fc label,above] {$A$} ([yshift=4pt]output.west);
+  \draw[fc reverse] ([yshift=-4pt]output.west) -- node[fc label,below] {$A^{\mathsf T}$} ([yshift=-4pt]input.east);
+\end{tikzpicture}
+\end{document}
