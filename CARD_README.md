@@ -433,9 +433,10 @@ made the `\longmapsto` direction explicit on front 25 and replaced unexplained
 retrieval target was omitted. The detailed reconciliation is in
 `.flashcards/audits/03_matrices_and_coordinate_transformations-cold-start.md`.
 
-## Chapter 04 pre-authoring ledger
+## Prior Chapter 04 comparison baseline (superseded)
 
-This ledger freezes the chapter boundary before card authoring. The only direct
+This preserved 30-target ledger is the comparison baseline from the prior
+version, not a card-count target for the regeneration. The only direct
 local inbound chapter is `03_matrices_and_coordinate_transformations`; chapters
 01–02 and the external decks contribute only their validator-resolved scheduled
 capabilities. Basis, linear independence, dimension, rank-nullity, inverses,
@@ -542,6 +543,103 @@ input/output-side retrievals. The front-only cold-start scan moved the
 row-space-invariance bridge from a solution onto front 19 and expanded the
 vector-space and set-builder bridges on fronts 1 and 9. No retrieval target,
 problem role, or figure opportunity was omitted. The detailed reconciliation
+is in `.flashcards/audits/04_subspaces_and_fundamental_spaces-cold-start.md`.
+
+## Chapter 04 regeneration pre-authoring ledger
+
+This ledger freezes the regenerated chapter boundary before card authoring.
+The only direct local inbound chapter is
+`03_matrices_and_coordinate_transformations`; chapters 01–02 and the external
+decks contribute only their validator-resolved scheduled capabilities. Basis,
+linear independence, dimension, rank-nullity, inverses, determinants,
+eigenstructure, inner products, affine terminology, and application-specific
+models are not inbound.
+
+The prior 30-target plan bundled the vector-space definition, the subspace test,
+several definition/location pairs, and two-space figure answers. Applying U1
+and D8 splits those independently gradable decisions. The resulting total is a
+consequence of the ledger below, not a target.
+
+### Retrieval targets and card forms
+
+| Planned fronts | Independent retrieval decisions | Form and progression |
+|---:|---|---|
+| 1–14 | `R^n` notation; the operations of a real vector space; each of the ten vector-space laws; why `R^n` satisfies them; fixed-shape matrix spaces. | Fourteen `Q:/A:` cards: notation/definition bridges advance one law at a time, followed by two varied syntheses. |
+| 15–22 | Membership, subset, and inherited-operation language; subspace definition; zero, addition, and scalar checks separately; the complete subspace-test conclusion. | Eight `Q:/A:` cards; the complete test appears only after its three conditions are retrieved. |
+| 23–27 | Apply the subspace test; explain why spans and the zero-only set are subspaces; diagnose scalar-closure and nonzero-target failures. | One analyzed `P:/S:` problem and four bounded `Q:/A:` cards. |
+| 28–36 | Null-space definition and ambient length; its three subspace-test components; theorem conclusion; calculation; kernel definition and matrix translation. | Eight `Q:/A:` cards plus one completion `P:/S:` problem. |
+| 37–43 | Column-space definition and ambient length; image definition and matrix translation; solvability rule; membership calculation; subspace reason. | Six `Q:/A:` cards plus one faded `P:/S:` problem. |
+| 44–50 | Row-space definition, transpose translation, and ambient length; one-way row-span effect; reversibility; zero-row omission; row-space calculation. | Six `Q:/A:` cards plus one faded `P:/S:` problem. |
+| 51–53 | Left-null definition, ambient length, and calculation. | Two `Q:/A:` cards plus one independent `P:/S:` problem. |
+| 54–57 | Locate `N(A)`, `Row(A)`, `Col(A)`, and `N(A^T)` individually on the input/output diagram. | Four atomic figure-based `Q:/A:` cards. |
+| 58–63 | Rank definition and computation; original pivot-column rule; nonzero-RREF-row rule; equality of the established counts; independent column-space extraction. | Five `Q:/A:` cards plus one independent `P:/S:` problem. |
+| 64–65 | Retrieve the collective name “four fundamental spaces”; discriminate kernel/input from image/output questions. | Two final mixed `Q:/A:` cards. |
+
+No cloze is planned: each exact law, symbol, or space name participates in a
+bounded explanation, classification, or calculation. The six problems progress
+from an analyzed subspace proof through null-space calculation, column-space
+membership, row-space extraction, independent left-null work, and independent
+column-space extraction from a reduction record.
+
+### Chapter 04 regeneration concept-dependency ledger
+
+| Concept, symbol, representation, or procedure | Required on first front | Allowed inbound source or first establishment | First supported retrieval | Later application | Status |
+|---|---:|---|---:|---|---|
+| Real scalars; coordinate vectors; vector/matrix addition and scaling; zero vectors; spans; homogeneous systems; RREF; pivots; matrix transformations and transpose | 1 | Resolved external capability summaries and chapters 01–03. | Inbound | Throughout | ready |
+| `R^n` | 1 | Explained as all `n`-entry real coordinate vectors. | 1 | 13 onward | ready |
+| Real vector-space structure | 2 | Operations are oriented without supplying the law bundle. | 2 | 3–14 | ready |
+| Ten vector-space laws | 3–12 | Exactly one law is explained and retrieved on each front. | 3–12 | 13–14 and downstream | ready |
+| Membership, subset, inherited operations | 15–17 | One relation or notation item per front. | 15–17 | 18 onward | ready |
+| Subspace | 18 | Defined only after all three prerequisite relations. | 18 | 19–65 | ready |
+| Three-condition subspace test | 19–22 | Each condition is retrieved before the method conclusion. | 19–22 | 23–33, 43 | ready |
+| Counterexample | 26 | Explained as one explicit object or operation that breaks a required universal condition. | 26 | 27 and later diagnoses | ready |
+| Null space `N(A)` | 28 | Homogeneous solution collection; ambient length is a separate next card. | 28–29 | 30–36, 51–65 | ready |
+| Null-space subspace proof | 30–33 | Zero, addition, and scaling precede the theorem conclusion. | 30–33 | 34 onward | ready |
+| Kernel | 35 | Defined as inputs sent to zero, then related to `N(A)`. | 35–36 | 54, 64–65 | ready |
+| Column space `Col(A)` | 37 | Defined as the span of columns; ambient length follows separately. | 37–38 | 39–43, 56–65 | ready |
+| Image | 39 | Defined as attainable outputs, then related to `Col(A)`. | 39–40 | 41–43, 56, 64–65 | ready |
+| Column-space solvability test | 41 | Derived from inbound matrix–vector column combinations. | 41–42 | 65 | ready |
+| Row space `Row(A)` | 44 | Definition, transpose relation, and ambient length are separate. | 44–46 | 47–50, 55, 58–64 | ready |
+| Row-operation preservation of row space | 47–48 | One-way containment precedes the reverse-containment argument. | 47–48 | 49–50, 61–63 | ready |
+| Left null space `N(A^T)` | 51 | Definition and ambient length are separate. | 51–52 | 53, 57, 64 | ready |
+| Fundamental-space diagram grammar | 54 | Two coordinate-vector panels and the directions of `A` and `A^T` are explained without naming spaces. | 54–57 | 64–65 | ready |
+| Matrix rank | 58 | Defined by inbound pivot positions; row/column representatives follow separately. | 58–63 | Downstream | ready |
+| Four fundamental spaces | 64 | The collective term follows individual definition, location, and figure retrieval. | 64 | Downstream | ready |
+
+Rejected examples: lines and planes treated as known geometric objects, affine
+solution sets, independence, bases, dimension, rank-nullity, orthogonal
+complements, inverse criteria, determinants, eigenvectors, regression, networks,
+graphics, and differential systems. They require unscheduled external material,
+later chapters, or application-specific bridges.
+
+### Authentic representations and figure decisions
+
+- **Included:** coordinate collections, law equations, membership/subset
+  notation, verbal subspace conditions, homogeneous constraints, parametric
+  spans, matrix equations, transposes, RREF records, and an input/output map.
+- **Fundamental-space input/output map: include.** One compact TikZ/SVG diagram
+  shows `A` sending `n`-entry inputs to `m`-entry outputs and `A^T` acting in
+  reverse. Four fronts each locate one space; no answer labels appear.
+- **Subspace-inside-ambient sketch: omit.** A line/plane drawing would import
+  unscheduled coordinate-plane grammar and make a special case look general.
+- **Venn diagram: omit.** The four spaces live in two ambient coordinate spaces,
+  not four overlapping regions of one set.
+- **Row-reduction flow: omit.** Exact matrices and operation records are the
+  authentic representation and already support the method decision.
+- **Separate kernel/image point cloud: omit.** The included map already supplies
+  the distinct input/output retrieval role.
+
+Planned inventory: 65 cards (`Q:/A:` 59, `P:/S:` 6, `C:` 0); six problems;
+one TikZ/SVG figure supporting four atomic relational fronts.
+
+Actual inventory: 65 cards (`Q:/A:` 59, `P:/S:` 6, `C:` 0); all six planned
+problem roles and all four one-space figure decisions are present. The
+front-only audit removed early membership notation, avoided set-builder
+notation on the counterexample, and replaced the prior bundled row/column
+extraction problem with an independent column-space problem. The superseded
+paired figure IDs `e523b540-b8cd-4446-a2d0-312aea8f88e9` and
+`6f1e05d6-b4ac-4d02-96f2-a4d15f80d0ec`, and bundled problem ID
+`36048395-3336-46a4-a0d6-778ddc249d5a`, are retired. The full reconciliation
 is in `.flashcards/audits/04_subspaces_and_fundamental_spaces-cold-start.md`.
 
 ## Initial-learning path
