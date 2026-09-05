@@ -37,7 +37,9 @@ algebraic, geometric, and computational views.
   iterative solvers, Jordan canonical form, and proof techniques not developed
   locally. Those belong to the named downstream decks or to a later course.
 
-Chapter 1 contains the 27-card cold-start pilot for systems and elimination.
+Chapter 1 contains 39 cold-start-audited cards for systems and elimination
+(30 basic, 9 problems, no clozes or figures), including explicit bridges from
+the staged algebra frontier. Its 27 original stable IDs are preserved.
 Chapter 2 contains 23 cards on coordinate vectors, vector operations, linear
 combinations, vector equations, span, and homogeneous systems, with two
 retrieval figures. Chapter 3 contains 26 cards on matrices, matrix operations,
@@ -111,6 +113,25 @@ authoring.
 | David Austin, *Understanding Linear Algebra*, [§3.5 “Subspaces”](https://understandinglinearalgebra.org/sec-subspaces.html) and [colophon](https://understandinglinearalgebra.org/frontmatter-4.html) | Current open first-course text; claim-verification cross-check for subspaces, column and null spaces, solvability as column-space membership, and rank. | CC BY 4.0; consulted without copying prose, exercises, or figures. | 2026-09-04 |
 | Rob Beezer, *A First Course in Linear Algebra*, [“Subspaces”](https://linear.ups.edu/linear.ups.edu/html/section-S.html) and [“Four Subsets”](https://linear.ups.edu/linear.ups.edu/html/section-FS.html) | Open first-course text; independent verification of the vector-space laws, subspace test, and null, column, row, and left-null spaces as subspaces. | GNU Free Documentation License; consulted without copying prose, exercises, or figures. | 2026-09-04 |
 | [MIT OpenCourseWare, 18.06SC, “The Four Fundamental Subspaces”](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/ax-b-and-the-four-subspaces/the-four-fundamental-subspaces/) | Undergraduate university course materials; claim-verification cross-check for the four spaces, their ambient coordinate lengths, and their connection to rank and solvability. | CC BY-NC-SA 4.0 unless otherwise noted; consulted for verification only. | 2026-09-04 |
+
+### Chapter 01 verification refresh — 2026-09-05
+
+The chapter-1 revision uses original explanations and examples, checked by
+direct algebra and the following live authoritative references. These verify
+claims and conventions; they do not change the curricular scope above.
+
+| Source | Authority and verification role | License or terms | Accessed |
+|---|---|---|---|
+| Georgia Institute of Technology, *Interactive Linear Algebra*, [Row Reduction](https://textbooks.math.gatech.edu/ila/row-reduction.html) | University-hosted first-course text; reversible operations, echelon/RREF conditions, pivot terminology, and elimination procedure. | GNU FDL 1.2 or later, no invariant sections, per [colophon](https://textbooks.math.gatech.edu/ila/colophon-1.html); consultation only, no prose, exercises or figures copied. | 2026-09-05 |
+| Georgia Institute of Technology, *Interactive Linear Algebra*, [Parametric Form](https://textbooks.math.gatech.edu/ila/parametric-form.html) | Consistency before arbitrary free choices; all-solutions descriptions and the zero/one/infinite alternatives over the reals. | GNU FDL 1.2 or later, same colophon; consultation only. | 2026-09-05 |
+| TU Delft, [Systems of linear equations](https://interactivetextbooks.tudelft.nl/linear-algebra/Chapter2/LinearSystems.html) | Delft Institute of Applied Mathematics teaching team; independent definition check including one-equation systems, fixed coefficients, solution tuples, and consistency. | CC BY 4.0, stated in page footer; consultation only, no exercise or asset reuse. | 2026-09-05 |
+| Jim Hefferon, [License and source](https://hefferon.net/source.html) | Author's license statement, checked while evaluating the existing source register; no new chapter claim depends on this page. | Choice of GNU FDL or CC BY-SA 3.0 US for covered textbooks. | 2026-09-05 |
+
+Search discovery included row-reduction and free-variable queries; non-primary
+results were not used as mathematical authorities. The chapter uses the real
+number line as a minimal domain bridge, not a construction of the real numbers.
+Free choices are asserted only for consistent systems. A pivot may occur in an
+augmented constant column, but that column is not a variable.
 
 ### Uncertainty and conditions of use
 
